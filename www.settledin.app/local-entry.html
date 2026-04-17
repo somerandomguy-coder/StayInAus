@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="preload">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Settledin Local Clone</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <style>
+      html.preload *,
+      html.preload *::before,
+      html.preload *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+    </style>
+
+    <script>
+      window.requestAnimationFrame(function () {
+        document.documentElement.classList.remove('preload');
+      });
+    </script>
+
+    <script src="/local-demo-auth.js"></script>
+    <script type="module" crossorigin src="/assets/index-CzioLhT0.js"></script>
+
+    <link rel="modulepreload" crossorigin href="/assets/charts-DPpJkhGb.js" />
+    <link rel="modulepreload" crossorigin href="/assets/supabase-fazHhpD0.js" />
+    <link rel="modulepreload" crossorigin href="/assets/0-react-core-B_ICaWIn.js" />
+    <link rel="stylesheet" crossorigin href="/assets/react-core-BZV40eAE.css" />
+    <link rel="stylesheet" crossorigin href="/assets/index-BoTszufP.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

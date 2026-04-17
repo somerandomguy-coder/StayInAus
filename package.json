@@ -1,0 +1,10 @@
+{
+  "name": "stayinaus-local-clone",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local runtime scaffold for captured Settledin bundle",
+  "scripts": {
+    "start": "node local-clone-server.js",
+    "start:local": "node local-clone-server.js"
+  }
+}
