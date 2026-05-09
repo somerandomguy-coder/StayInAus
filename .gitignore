@@ -1,2 +1,21 @@
 www.settledin.app.zip
 .codex
+
+# Node / Next.js
+node_modules/
+apps/web/.next/
+apps/web/out/
+apps/web/.turbo/
+
+# Python / FastAPI
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Environment and local tooling
+.env
+.env.*
+.DS_Store

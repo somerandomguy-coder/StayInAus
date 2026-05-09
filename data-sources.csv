@@ -1,0 +1,3 @@
+name,url,category,notes
+Jobs and Skills Australia Occupation Shortage List,https://www.jobsandskills.gov.au/data/occupation-shortage/occupation-shortage-list,labor-market,Potential input for occupation shortage heatmap layers
+SkillSelect EOI Data Dashboard,https://api.dynamic.reports.employment.gov.au/anonap/extensions/hSKLS02_SkillSelect_EOI_Data/hSKLS02_SkillSelect_EOI_Data.html,migration,Potential input for invitation and EOI trend layers

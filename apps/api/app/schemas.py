@@ -1,0 +1,106 @@
+from __future__ import annotations
+
+from enum import Enum
+
+from pydantic import BaseModel, Field, HttpUrl
+
+
+class GeographyKind(str, Enum):
+    COUNTRY = "country"
+    STATE = "state"
+    SA4 = "sa4"
+
+
+class ViewMode(str, Enum):
+    ALL = "all"
+    METRO = "metro"
+    REGIONAL = "regional"
+
+
+class ShortageCategory(str, Enum):
+    SHORTAGE = "shortage"
+    REGIONAL_SHORTAGE = "regional_shortage"
+    METROPOLITAN_SHORTAGE = "metropolitan_shortage"
+    NO_SHORTAGE = "no_shortage"
+
+
+class VisaMode(str, Enum):
+    SUBCLASS_189 = "189"
+    SUBCLASS_190 = "190"
+    SUBCLASS_491 = "491"
+
+
+class SourceReference(BaseModel):
+    title: str
+    url: HttpUrl
+    last_updated: str
+
+
+class GeographyNode(BaseModel):
+    id: str
+    parent_id: str | None = None
+    kind: GeographyKind
+    code: str
+    canonical_name: str
+    display_name: str
+    supported_view_modes: list[ViewMode] = Field(default_factory=list)
+    has_children: bool = False
+
+
+class GeographyTreeResponse(BaseModel):
+    root_id: str
+    nodes: list[GeographyNode]
+
+
+class Occupation(BaseModel):
+    id: str
+    label: str
+    anzsco_code: str
+    major_group: str
+    skill_level: int
+
+
+class OccupationListResponse(BaseModel):
+    occupations: list[Occupation]
+
+
+class MapLayerItem(BaseModel):
+    geography: GeographyNode
+    shortage_category: ShortageCategory
+
+
+class MapLayerResponse(BaseModel):
+    focus: GeographyNode
+    parent: GeographyNode | None = None
+    breadcrumb: list[GeographyNode]
+    items: list[MapLayerItem]
+
+
+class MigrationEvidence(BaseModel):
+    shortage_category: ShortageCategory
+    source: SourceReference
+    geography_scope: ViewMode
+    visa_context_note: str
+    references: list[SourceReference]
+
+
+class LabourMarketSnapshot(BaseModel):
+    population: int
+    employment: int
+    unemployment_rate: float
+
+
+class IndustryStat(BaseModel):
+    name: str
+    employment_share: float
+
+
+class DetailPanelResponse(BaseModel):
+    geography: GeographyNode
+    occupation: Occupation
+    visa_mode: VisaMode
+    view_mode: ViewMode
+    badges: list[str]
+    migration_evidence: MigrationEvidence
+    labour_market: LabourMarketSnapshot
+    industries: list[IndustryStat]

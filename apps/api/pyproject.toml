@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stayinaus-api"
+version = "0.1.0"
+description = "Mocked FastAPI backend for AU-Settle Pro explorer foundation"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1.0",
+  "uvicorn[standard]>=0.35,<1.0",
+  "pydantic>=2.11,<3.0",
+]
+
+[tool.setuptools]
+packages = ["app"]
