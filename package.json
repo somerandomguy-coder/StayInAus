@@ -15,6 +15,7 @@
     "build:web": "npm run build --workspace @stayinaus/web",
     "start:web": "npm run start --workspace @stayinaus/web",
     "dev:api": "uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir apps/api",
-    "test:api": "python3 -m unittest discover -s apps/api/tests -v"
+    "test:api": "python3 -m unittest discover -s apps/api/tests -v",
+    "check:data": "python3 -m unittest discover -s apps/api/tests -p 'test_data_pipeline.py' -v"
   }
 }

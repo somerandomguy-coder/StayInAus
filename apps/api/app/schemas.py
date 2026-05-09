@@ -114,6 +114,19 @@ class IndustryStat(BaseModel):
     employment_share: float = Field(ge=0, le=100)
 
 
+class FitTier(str, Enum):
+    STRONG = "strong"
+    MODERATE = "moderate"
+    WEAK = "weak"
+
+
+class RegionFitScore(BaseModel):
+    score: float = Field(ge=0, le=100)
+    tier: FitTier
+    method: str
+    components: dict[str, float] = Field(default_factory=dict)
+
+
 class DetailPanelResponse(BaseModel):
     geography: GeographyNode
     occupation: Occupation
@@ -123,4 +136,5 @@ class DetailPanelResponse(BaseModel):
     migration_evidence: MigrationEvidence
     labour_market: LabourMarketSnapshot
     industries: list[IndustryStat]
+    ranking: RegionFitScore
     meta: ResponseMeta = Field(default_factory=ResponseMeta)

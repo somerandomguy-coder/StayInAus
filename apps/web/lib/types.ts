@@ -72,6 +72,15 @@ export interface IndustryStat {
   employment_share: number;
 }
 
+export type FitTier = "strong" | "moderate" | "weak";
+
+export interface RegionFitScore {
+  score: number;
+  tier: FitTier;
+  method: string;
+  components: Record<string, number>;
+}
+
 export interface DetailPanelResponse {
   geography: GeographyNode;
   occupation: Occupation;
@@ -81,4 +90,5 @@ export interface DetailPanelResponse {
   migration_evidence: MigrationEvidence;
   labour_market: LabourMarketSnapshot;
   industries: IndustryStat[];
+  ranking: RegionFitScore;
 }

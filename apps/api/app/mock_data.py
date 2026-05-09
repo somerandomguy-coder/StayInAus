@@ -2,8 +2,10 @@ from __future__ import annotations
 
 from collections import defaultdict
 
+from .data_pipeline import DataLoadError, load_real_occupation_dataset
 from .schemas import (
     DetailPanelResponse,
+    FitTier,
     GeographyNode,
     GeographyTreeResponse,
     IndustryStat,
@@ -13,6 +15,8 @@ from .schemas import (
     MigrationEvidence,
     Occupation,
     OccupationListResponse,
+    RegionFitScore,
+    ResponseMeta,
     ShortageCategory,
     SourceReference,
     ViewMode,
@@ -308,7 +312,7 @@ GEOGRAPHY_NODES = [
     },
 ]
 
-OCCUPATIONS = [
+FALLBACK_OCCUPATIONS = [
     {
         "id": "software-engineer",
         "label": "Software Engineer",
@@ -352,13 +356,26 @@ for _node in GEOGRAPHY_NODES:
     if _node["parent_id"]:
         CHILDREN_INDEX[_node["parent_id"]].append(_node)
 
-OCCUPATION_INDEX = {occupation["id"]: occupation for occupation in OCCUPATIONS}
+OCCUPATIONS = FALLBACK_OCCUPATIONS
+REAL_SHORTAGE_MATRIX: dict[str, dict[str, ShortageCategory]] = {}
 
 JSA_SOURCE = SourceReference(
     title="Jobs and Skills Australia Occupation Shortage List",
     url="https://www.jobsandskills.gov.au/data/occupation-shortage/occupation-shortage-list",
     last_updated="2026-04-24",
 )
+SHORTAGE_SOURCE = JSA_SOURCE
+
+try:
+    _real_dataset = load_real_occupation_dataset()
+    OCCUPATIONS = [occupation.model_dump(mode="json") for occupation in _real_dataset.occupations]
+    REAL_SHORTAGE_MATRIX = _real_dataset.shortage_matrix
+    SHORTAGE_SOURCE = _real_dataset.source
+except DataLoadError:
+    _real_dataset = None
+
+ACTIVE_DATA_STATUS = SHORTAGE_SOURCE.data_status
+OCCUPATION_INDEX = {occupation["id"]: occupation for occupation in OCCUPATIONS}
 SKILLSELECT_SOURCE = SourceReference(
     title="SkillSelect EOI Data Dashboard",
     url="https://api.dynamic.reports.employment.gov.au/anonap/extensions/hSKLS02_SkillSelect_EOI_Data/hSKLS02_SkillSelect_EOI_Data.html",
@@ -487,9 +504,27 @@ def get_state_id(node_id: str) -> str | None:
     return None
 
 
+def get_state_code(node_id: str) -> str | None:
+    state_id = get_state_id(node_id)
+    if not state_id:
+        return None
+    return get_node(state_id).code
+
+
+def get_real_data_geo_key(node_id: str) -> str:
+    node = get_node(node_id)
+    if node.kind.value == "country":
+        return "AU"
+    if node.kind.value == "state":
+        return node.code
+    state_code = get_state_code(node_id)
+    return state_code or "AU"
+
+
 def list_occupations() -> OccupationListResponse:
     return OccupationListResponse(
-        occupations=[Occupation.model_validate(occupation) for occupation in OCCUPATIONS]
+        occupations=[Occupation.model_validate(occupation) for occupation in OCCUPATIONS],
+        meta=ResponseMeta(data_status=ACTIVE_DATA_STATUS),
     )
 
 
@@ -526,6 +561,13 @@ def resolve_shortage_category(
 ) -> tuple[ShortageCategory, ViewMode]:
     node = get_node(node_id)
     effective_mode = get_effective_view_mode(node, requested_view_mode)
+    real_rows = REAL_SHORTAGE_MATRIX.get(occupation_id)
+    if real_rows:
+        geo_key = get_real_data_geo_key(node_id)
+        real_category = real_rows.get(geo_key)
+        if real_category:
+            return apply_view_mode(real_category, effective_mode), effective_mode
+
     base_category = BASE_CATEGORIES.get(node_id, ShortageCategory.NO_SHORTAGE)
     category = OCCUPATION_OVERRIDES.get(occupation_id, {}).get(node_id, base_category)
     category = apply_view_mode(category, effective_mode)
@@ -558,6 +600,7 @@ def build_map_layer(
         parent=parent,
         breadcrumb=breadcrumb,
         items=items,
+        meta=ResponseMeta(data_status=ACTIVE_DATA_STATUS),
     )
 
 
@@ -608,6 +651,55 @@ def get_industries(geography_id: str) -> list[IndustryStat]:
     return [IndustryStat.model_validate(row) for row in rows]
 
 
+def build_region_fit_score(
+    category: ShortageCategory,
+    visa_mode: VisaMode,
+    effective_mode: ViewMode,
+    labour_market: LabourMarketSnapshot,
+    industries: list[IndustryStat],
+) -> RegionFitScore:
+    shortage_component = {
+        ShortageCategory.SHORTAGE: 56.0,
+        ShortageCategory.REGIONAL_SHORTAGE: 50.0,
+        ShortageCategory.METROPOLITAN_SHORTAGE: 45.0,
+        ShortageCategory.NO_SHORTAGE: 24.0,
+    }[category]
+
+    unemployment_component = max(0.0, min(24.0, (8.0 - labour_market.unemployment_rate) * 3.0))
+
+    if visa_mode == VisaMode.SUBCLASS_491:
+        visa_component = 12.0 if effective_mode == ViewMode.REGIONAL else 6.0
+    elif visa_mode == VisaMode.SUBCLASS_190:
+        visa_component = 8.0
+    else:
+        visa_component = 5.0
+
+    top_share = industries[0].employment_share if industries else 15.0
+    industry_balance_component = max(0.0, min(12.0, 14.0 - top_share * 0.6))
+
+    raw_score = shortage_component + unemployment_component + visa_component + industry_balance_component
+    score = round(max(0.0, min(100.0, raw_score)), 1)
+
+    if score >= 70:
+        tier = FitTier.STRONG
+    elif score >= 50:
+        tier = FitTier.MODERATE
+    else:
+        tier = FitTier.WEAK
+
+    return RegionFitScore(
+        score=score,
+        tier=tier,
+        method="region-fit-v0.1",
+        components={
+            "shortage": round(shortage_component, 1),
+            "labour_market": round(unemployment_component, 1),
+            "visa_mode": round(visa_component, 1),
+            "industry_balance": round(industry_balance_component, 1),
+        },
+    )
+
+
 def build_detail_panel(
     geography_id: str,
     occupation_id: str,
@@ -619,14 +711,17 @@ def build_detail_panel(
     shortage_category, effective_mode = resolve_shortage_category(
         geography_id, occupation_id, requested_view_mode
     )
+    labour_market = get_labour_market(geography_id)
+    industries = get_industries(geography_id)
     migration_note = build_migration_note(visa_mode, effective_mode, shortage_category)
     badges = build_badges(shortage_category, effective_mode, visa_mode)
     migration_evidence = MigrationEvidence(
         shortage_category=shortage_category,
-        source=JSA_SOURCE,
+        source=SHORTAGE_SOURCE,
         geography_scope=effective_mode,
         visa_context_note=migration_note,
-        references=[JSA_SOURCE, SKILLSELECT_SOURCE, ABS_SOURCE],
+        references=[SHORTAGE_SOURCE, SKILLSELECT_SOURCE, ABS_SOURCE],
+        data_status=SHORTAGE_SOURCE.data_status,
     )
     return DetailPanelResponse(
         geography=geography,
@@ -635,8 +730,16 @@ def build_detail_panel(
         view_mode=effective_mode,
         badges=badges,
         migration_evidence=migration_evidence,
-        labour_market=get_labour_market(geography_id),
-        industries=get_industries(geography_id),
+        labour_market=labour_market,
+        industries=industries,
+        ranking=build_region_fit_score(
+            category=shortage_category,
+            visa_mode=visa_mode,
+            effective_mode=effective_mode,
+            labour_market=labour_market,
+            industries=industries,
+        ),
+        meta=ResponseMeta(data_status=ACTIVE_DATA_STATUS),
     )
 
 

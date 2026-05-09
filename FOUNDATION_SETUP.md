@@ -22,7 +22,13 @@ npm run dev:api
 Run API contract tests:
 
 ```bash
-python3 -m unittest discover -s apps/api/tests -v
+npm run test:api
+```
+
+Run data-ingestion tests:
+
+```bash
+npm run check:data
 ```
 
 Start web app (new terminal):
@@ -75,4 +81,5 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000 npm run dev:web
   - Industries
   - Evidence links
 
-All data is mocked in `apps/api/app/mock_data.py` and can be replaced incrementally with real ingestion later.
+- Occupations and national/state shortage categories now ingest from real OSL source data.
+- Labour market and industry panels are still mocked and are next to replace.

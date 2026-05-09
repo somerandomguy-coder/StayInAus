@@ -43,8 +43,11 @@ class ApiContractTests(unittest.TestCase):
     def test_occupations_contract(self) -> None:
         payload = get_occupations().model_dump(mode="json")
         self.assertEqual(payload["meta"]["contract_version"], "v1")
-        self.assertEqual(payload["meta"]["data_status"], "mock")
-        self.assertGreaterEqual(len(payload["occupations"]), 5)
+        self.assertIn(payload["meta"]["data_status"], {"mock", "real"})
+        if payload["meta"]["data_status"] == "real":
+            self.assertGreaterEqual(len(payload["occupations"]), 900)
+        else:
+            self.assertGreaterEqual(len(payload["occupations"]), 5)
         for occupation in payload["occupations"]:
             self.assertGreaterEqual(occupation["skill_level"], 1)
             self.assertLessEqual(occupation["skill_level"], 5)
@@ -56,7 +59,7 @@ class ApiContractTests(unittest.TestCase):
             view_mode=ViewMode.ALL,
         ).model_dump(mode="json")
         self.assertEqual(payload["meta"]["contract_version"], "v1")
-        self.assertEqual(payload["meta"]["data_status"], "mock")
+        self.assertIn(payload["meta"]["data_status"], {"mock", "real"})
         self.assertEqual(payload["focus"]["id"], "au")
         self.assertEqual(payload["parent"]["id"], "au")
         self.assertGreaterEqual(len(payload["items"]), 8)
@@ -92,17 +95,17 @@ class ApiContractTests(unittest.TestCase):
         ).model_dump(mode="json")
 
         self.assertEqual(payload["meta"]["contract_version"], "v1")
-        self.assertEqual(payload["meta"]["data_status"], "mock")
+        self.assertIn(payload["meta"]["data_status"], {"mock", "real"})
         self.assertEqual(payload["geography"]["id"], "sa4-nt-outback")
         self.assertEqual(payload["occupation"]["id"], "software-engineer")
         self.assertEqual(payload["visa_mode"], "491")
         self.assertEqual(payload["view_mode"], "regional")
 
         migration = payload["migration_evidence"]
-        self.assertEqual(migration["data_status"], "mock")
+        self.assertIn(migration["data_status"], {"mock", "real"})
         self.assertIn("shortage_category", migration)
         self.assertRegex(migration["source"]["last_updated"], r"^\d{4}-\d{2}-\d{2}$")
-        self.assertEqual(migration["source"]["data_status"], "mock")
+        self.assertIn(migration["source"]["data_status"], {"mock", "real"})
         self.assertGreaterEqual(len(migration["references"]), 3)
 
         labour_market = payload["labour_market"]
@@ -116,6 +119,13 @@ class ApiContractTests(unittest.TestCase):
         for industry in industries:
             self.assertGreaterEqual(industry["employment_share"], 0)
             self.assertLessEqual(industry["employment_share"], 100)
+
+        ranking = payload["ranking"]
+        self.assertGreaterEqual(ranking["score"], 0)
+        self.assertLessEqual(ranking["score"], 100)
+        self.assertIn(ranking["tier"], {"strong", "moderate", "weak"})
+        self.assertEqual(ranking["method"], "region-fit-v0.1")
+        self.assertIn("shortage", ranking["components"])
 
     def test_detail_panel_invalid_geography_returns_404(self) -> None:
         with self.assertRaises(HTTPException) as err:

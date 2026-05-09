@@ -21,7 +21,7 @@ from .schemas import (
 app = FastAPI(
     title="AU-Settle Pro Explorer API",
     version="0.1.0",
-    description="Mocked FastAPI backend for geography-first exploration contracts",
+    description="FastAPI backend for geography-first exploration contracts (mixed real + mock data)",
 )
 
 app.add_middleware(

@@ -4,7 +4,7 @@ This document defines the current backend contract for `apps/api`.
 
 - Contract version: `v1`
 - Base URL (local): `http://127.0.0.1:8000`
-- Data status in this branch: `mock`
+- Data status in this branch: `mixed` (real occupations/shortage + mock labour/industry)
 
 ## Global behavior
 
@@ -78,6 +78,7 @@ This document defines the current backend contract for `apps/api`.
   - `migration_evidence`
   - `labour_market`
   - `industries`
+  - `ranking` (simple region-fit score)
   - `meta: ResponseMeta`
 - Errors:
   - `404` for unknown `geography_id` or `occupation_id`
@@ -93,5 +94,6 @@ This document defines the current backend contract for `apps/api`.
 
 ## Current limits (known)
 
-- Labour market and industry values are still mocked.
-- Shortage category logic is deterministic mock logic, not full source-derived aggregation yet.
+- Occupation list and national/state shortage categories are sourced from real JSA OSL data.
+- SA4 shortage still rolls up from state-level evidence (no SA4-specific OSL rows yet).
+- Labour market and industry values are still mocked and should be replaced next.

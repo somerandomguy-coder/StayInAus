@@ -2,11 +2,17 @@
 
 This plan is implementation-ready, but intentionally does not fully ingest real data yet.
 
+## Current status in this branch
+
+- Done: occupations and national/state shortage ratings now ingest from real JSA OSL data.
+- Still mock: labour market and industry panels.
+- Next target: replace `LABOUR_MARKET_DATA`, then `INDUSTRY_DATA`.
+
 ## 1) What is mocked today
 
 - Geography tree: `GEOGRAPHY_NODES` in `apps/api/app/mock_data.py`
-- Occupations list: `OCCUPATIONS`
-- Shortage categories and occupation overrides: `BASE_CATEGORIES`, `OCCUPATION_OVERRIDES`
+- Occupations list: now primarily real via `apps/api/app/data_pipeline.py` (fallback mock remains)
+- Shortage categories and occupation overrides: now primarily real for AU/state (fallback mock remains)
 - Labour market: `LABOUR_MARKET_DATA`
 - Industries: `INDUSTRY_DATA`
 - Source references and dates: `JSA_SOURCE`, `SKILLSELECT_SOURCE`, `ABS_SOURCE`

@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "dataset_id": "jsa_osl_2025_anzsco2022",
+      "dataset_name": "2025 Occupation Shortage List (ANZSCO 2022)",
+      "provider": "Jobs and Skills Australia",
+      "source_url": "https://www.jobsandskills.gov.au/data/occupation-shortage/occupation-shortage-list",
+      "download_url": "https://www.jobsandskills.gov.au/sites/default/files/2025-10/2025%20Occupation%20Shortage%20List%20-%206%20digit%20ANZSCO%20and%20OSCA.xlsx",
+      "local_path": "apps/data/raw/occupation_shortage/2025_osl_anzsco2022.csv",
+      "file_format": "csv",
+      "last_updated": "2025-10-01",
+      "data_status": "real",
+      "description": "Normalized extract from the official XLSX sheet '2025 OSL (ANZSCO 2022)'.",
+      "license": "Australian Government open data terms",
+      "sheet_name": "2025 OSL (ANZSCO 2022)",
+      "header_row": 8
+    }
+  ]
+}

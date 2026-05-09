@@ -1,0 +1,917 @@
+anzsco_code,occupation_title,national_rating,nsw,vic,qld,sa,wa,tas,nt,act,skill_level,major_group
+111111,Chief Executive or Managing Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+111211,Corporate General Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121111,Aquaculture Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121311,Apiarist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121312,Beef Cattle Farmer,NS,NS,NS,NS,NS,NS,NS,S,NS,1,1
+121313,Dairy Cattle Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121314,Deer Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121315,Goat Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121316,Horse Breeder,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121318,Pig Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121321,Poultry Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121322,Sheep Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121323,Mixed Cattle and Sheep Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121399,Livestock Farmers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121511,Cotton Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121512,"Grain, Oilseed, Pulse or Pasture Grower / Field Crop Grower",NS,NS,NS,NS,NS,S,NS,NS,NS,1,1
+121513,Sugar Cane Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121599,Broadacre Crop Growers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121611,Flower Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121612,Fruit Grower,NS,NS,NS,NS,NS,S,NS,NS,NS,1,1
+121613,Nut Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121614,Production Nursery Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121615,Turf Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121616,Vegetable Grower,NS,NS,NS,NS,NS,S,NS,NS,NS,1,1
+121617,Wine Grape Grower,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121699,Horticultural Crop Growers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121711,Broadacre Crop and Livestock Farmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+121799,Mixed Production Farmers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+131112,Sales and Marketing Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+131113,Advertising Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+131114,Public Relations Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+132111,Corporate Services Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+132211,Finance Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+132311,Human Resource Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+132411,Policy and Planning Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+132511,Research and Development Manager,NS,NS,NS,NS,NS,NS,NS,S,NS,1,1
+133111,Construction Project Manager,S,S,S,S,S,S,S,S,S,1,1
+133112,Project Builder,NS,NS,NS,NS,NS,S,NS,S,NS,1,1
+133211,Engineering Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133311,Importer or Exporter,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133312,Wholesaler,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133411,Manufacturer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133511,Production Manager (Forestry),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133512,Production Manager (Manufacturing),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133513,Production Manager (Mining),NS,NS,NS,NS,NS,NS,NS,S,NS,1,1
+133611,Supply and Distribution Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+133612,Procurement Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134111,Child Care Centre Manager,NS,NS,NS,NS,NS,S,NS,S,NS,1,1
+134211,Medical Administrator / Medical Superintendent,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134212,Nursing Clinical Director,NS,NS,NS,NS,R,S,NS,NS,NS,1,1
+134213,Primary Health Organisation Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134214,Welfare Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134299,Health and Welfare Services Managers nec,NS,NS,R,NS,NS,NS,NS,S,NS,1,1
+134311,School Principal,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134411,Faculty Head,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134412,Regional Education Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+134499,Education Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+135111,Chief Information Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+135112,ICT Project Manager,NS,NS,NS,NS,NS,NS,NS,S,NS,1,1
+135199,ICT Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+139911,Arts Administrator or Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+139912,Environmental Manager,NS,NS,NS,S,NS,S,NS,NS,NS,1,1
+139913,Laboratory Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+139915,Sports Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+139916,Quality Assurance Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+139917,Regulatory Affairs Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+139999,Specialist Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,1
+141111,Cafe or Restaurant Manager,NS,NS,NS,NS,R,NS,R,S,S,2,1
+141211,Caravan Park and Camping Ground Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+141311,Hotel or Motel Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+141411,Licensed Club Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+141911,Bed and Breakfast Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+141912,Retirement Village Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+141999,Accommodation and Hospitality Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+142111,Retail Manager (General),NS,NS,NS,NS,NS,NS,R,R,NS,2,1
+142112,Antique Dealer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+142113,Betting Agency Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+142114,Hair or Beauty Salon Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+142115,Post Office Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+142116,Travel Agency Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149111,Amusement Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149112,Fitness Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149113,Sports Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149211,Call or Contact Centre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149212,Customer Service Manager,NS,NS,NS,NS,NS,NS,NS,S,NS,2,1
+149311,Conference and Event Organiser,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149411,Fleet Manager,NS,NS,NS,NS,NS,S,NS,S,NS,2,1
+149412,Railway Station Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149413,Transport Company Manager,NS,NS,NS,NS,NS,S,NS,NS,NS,2,1
+149911,Boarding Kennel or Cattery Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149912,Cinema or Theatre Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149913,Facilities Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149914,Financial Institution Branch Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149915,Equipment Hire Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+149999,"Hospitality, Retail and Service Managers nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,2,1
+211111,Actor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211112,Dancer or Choreographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211113,Entertainer or Variety Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211199,"Actors, Dancers and Other Entertainers nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211211,Composer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211212,Music Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211213,Musician (Instrumental),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211214,Singer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211299,Music Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211311,Photographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+211411,Painter (Visual Arts),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211412,Potter or Ceramic Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211413,Sculptor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+211499,Visual Arts and Crafts Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212111,Artistic Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212112,Media Producer (excluding Video),NS,NS,NS,NS,NS,S,NS,NS,NS,1,2
+212113,Radio Presenter,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212114,Television Presenter,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212211,Author,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212212,Book or Script Editor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212311,"Art Director (Film, Television or Stage)",NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212312,"Director (Film, Television, Radio or Stage)",NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212313,Director of Photography,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212314,Film and Video Editor,S,S,S,S,S,S,S,S,S,1,2
+212315,Program Director (Television or Radio),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212316,Stage Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212317,Technical Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212318,Video Producer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212399,"Film, Television, Radio and Stage Directors nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212411,Copywriter,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212412,Newspaper or Periodical Editor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212413,Print Journalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212414,Radio Journalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212415,Technical Writer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212416,Television Journalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+212499,Journalists and Other Writers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+221111,Accountant (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+221112,Management Accountant,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+221113,Taxation Accountant,S,S,S,S,S,S,S,S,S,1,2
+221211,Company Secretary,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+221212,Corporate Treasurer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+221213,External Auditor,S,S,S,S,S,S,S,S,S,1,2
+221214,Internal Auditor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+222111,Commodities Trader,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+222112,Finance Broker,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+222113,Insurance Broker,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+222199,Financial Brokers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+222211,Financial Market Dealer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+222212,Futures Trader,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+222213,Stockbroking Dealer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+222299,Financial Dealers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+222311,Financial Investment Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+222312,Financial Investment Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+223111,Human Resource Adviser,NS,NS,NS,NS,S,NS,NS,S,NS,1,2
+223112,Recruitment Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+223113,Workplace Relations Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+223311,Training and Development Professional,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224111,Actuary,S,S,S,S,S,S,S,NS,S,1,2
+224112,Mathematician,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224114,Data Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224115,Data Scientist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224116,Statistician,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224211,Archivist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224212,Gallery or Museum Curator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224213,Health Information Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224214,Records Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224311,Economist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224411,Intelligence Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224412,Policy Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224511,Land Economist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224512,Valuer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224611,Librarian,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224712,Organisation and Methods Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224713,Management Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224714,Supply Chain Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224911,Electorate Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224912,Liaison Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224913,Migration Agent / Immigration Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224914,Patents Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+224999,Information and Organisation Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225111,Advertising Specialist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225112,Market Research Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225113,Marketing Specialist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225114,Content Creator (Marketing),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225115,Digital Marketing Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225211,ICT Account Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225212,ICT Business Development Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225213,ICT Sales Representative,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225311,Public Relations Professional,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225411,Sales Representative (Industrial Products),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225412,Sales Representative (Medical and Pharmaceutical Products),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+225499,Technical Sales Representatives nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+231111,Aeroplane Pilot,S,S,S,S,S,S,S,S,S,1,2
+231112,Air Traffic Controller,S,S,S,S,S,S,S,S,S,1,2
+231113,Flying Instructor,S,S,S,S,S,S,NS,NS,S,1,2
+231114,Helicopter Pilot,S,S,S,S,S,S,S,S,S,1,2
+231199,Air Transport Professionals nec,S,S,S,S,S,S,S,S,S,1,2
+231211,Master Fisher,S,S,S,S,S,S,S,S,NS,2,2
+231212,Ship's Engineer,S,S,S,S,S,S,S,S,S,2,2
+231213,Ship's Master,S,S,S,S,S,S,S,S,S,2,2
+231214,Ship's Officer,S,S,S,S,S,S,S,S,S,2,2
+231215,Marine Surveyor,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+231299,Marine Transport Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+232111,Architect,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232112,Landscape Architect,NS,NS,NS,NS,NS,NS,NS,S,NS,1,2
+232212,Surveyor,S,S,S,S,S,S,S,S,S,1,2
+232213,Cartographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232214,Other Spatial Scientist,S,S,S,S,S,S,S,S,S,1,2
+232311,Fashion Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232312,Industrial Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232313,Jewellery Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232411,Graphic Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232412,Illustrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232413,Multimedia Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232414,Web Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+232511,Interior Designer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,2
+232611,Urban and Regional Planner,R,R,R,R,R,R,R,S,S,1,2
+233111,Chemical Engineer,NS,NS,NS,S,NS,NS,NS,S,NS,1,2
+233112,Materials Engineer,NS,NS,S,S,NS,NS,S,NS,NS,1,2
+233211,Civil Engineer,S,S,S,S,S,S,S,S,S,1,2
+233212,Geotechnical Engineer,S,S,S,S,S,S,S,S,S,1,2
+233213,Quantity Surveyor,S,S,S,S,S,S,S,S,S,1,2
+233214,Structural Engineer,S,S,S,S,S,S,S,S,S,1,2
+233215,Transport Engineer,S,S,S,S,S,S,S,S,S,1,2
+233311,Electrical Engineer,S,S,NS,NS,S,S,NS,S,NS,1,2
+233411,Electronics Engineer,NS,NS,NS,S,S,NS,NS,NS,S,1,2
+233511,Industrial Engineer,NS,NS,NS,S,S,NS,NS,S,S,1,2
+233512,Mechanical Engineer,NS,NS,NS,NS,S,S,NS,S,NS,1,2
+233513,Production or Plant Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+233611,Mining Engineer (excluding Petroleum),S,S,S,S,S,S,S,S,S,1,2
+233612,Petroleum Engineer,S,S,S,S,S,S,S,S,NS,1,2
+233911,Aeronautical Engineer,S,S,S,S,S,S,NS,S,S,1,2
+233912,Agricultural Engineer,S,S,S,S,S,S,NS,NS,NS,1,2
+233913,Biomedical Engineer,S,S,S,S,S,NS,S,NS,S,1,2
+233914,Engineering Technologist,S,S,S,S,S,S,S,NS,S,1,2
+233915,Environmental Engineer,S,S,S,S,S,S,S,S,S,1,2
+233916,Naval Architect / Marine Designer,S,S,S,S,S,S,S,S,S,1,2
+233999,Engineering Professionals nec,NS,NS,NS,S,S,NS,NS,NS,NS,1,2
+234111,Agricultural Consultant,S,S,S,S,S,S,S,S,S,1,2
+234113,Forester / Forest Scientist,S,S,S,S,S,S,S,S,S,1,2
+234114,Agricultural Research Scientist,S,S,S,S,S,S,S,S,S,1,2
+234115,Agronomist,S,S,S,S,S,S,S,S,S,1,2
+234116,Aquaculture or Fisheries Scientist,S,S,S,S,S,S,S,S,S,1,2
+234211,Chemist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234212,Food Technologist,NS,S,NS,NS,NS,NS,NS,NS,NS,1,2
+234213,Wine Maker,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234311,Conservation Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234312,Environmental Consultant,NS,NS,NS,NS,S,NS,NS,S,NS,1,2
+234313,Environmental Research Scientist,S,S,S,S,S,S,S,S,S,1,2
+234314,Park Ranger,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234399,Environmental Scientists nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234411,Geologist,S,NS,NS,NS,NS,S,NS,S,NS,1,2
+234412,Geophysicist,S,S,S,S,S,S,S,S,S,1,2
+234413,Hydrogeologist,S,S,S,S,S,S,S,S,S,1,2
+234511,Life Scientist (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234513,Biochemist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234514,Biotechnologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234515,Botanist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234516,Marine Biologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234517,Microbiologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234521,Entomologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234522,Zoologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234599,Life Scientists nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234611,Medical Laboratory Scientist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234612,Respiratory Scientist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234711,Veterinarian,S,S,S,S,S,S,S,S,S,1,2
+234911,Conservator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234912,Metallurgist,S,S,S,S,S,S,S,S,NS,1,2
+234913,Meteorologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234914,Physicist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234915,Exercise Physiologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+234999,Natural and Physical Science Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+241111,Early Childhood (Pre-primary School) Teacher,S,S,S,S,S,S,S,S,S,1,2
+241213,Primary School Teacher,S,S,S,S,S,S,S,S,S,1,2
+241311,Middle School Teacher / Intermediate School Teacher,S,S,S,S,S,S,S,S,S,1,2
+241411,Secondary School Teacher,S,S,S,S,S,S,S,S,S,1,2
+241511,Special Needs Teacher,S,S,S,S,S,S,S,S,S,1,2
+241512,Teacher of the Hearing Impaired,S,S,S,S,S,S,S,NS,S,1,2
+241513,Teacher of the Sight Impaired,S,S,S,S,S,S,S,NS,S,1,2
+241599,Special Education Teachers nec,S,S,S,S,S,S,S,S,S,1,2
+242111,University Lecturer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+242112,University Tutor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+242211,Vocational Education Teacher / Polytechnic Teacher,S,S,S,S,S,S,S,S,S,1,2
+249111,Education Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249112,Education Reviewer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249211,Art Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249212,Dance Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249213,Drama Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249214,Music Teacher (Private Tuition),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249299,Private Tutors and Teachers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+249311,Teacher of English to Speakers of Other Languages,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251111,Dietitian,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251112,Nutritionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251211,Medical Diagnostic Radiographer,S,S,S,S,S,S,S,S,S,1,2
+251212,Medical Radiation Therapist,R,R,R,R,R,R,R,R,S,1,2
+251213,Nuclear Medicine Technologist,S,S,S,S,S,S,S,NS,S,1,2
+251214,Sonographer,S,S,S,S,S,S,S,S,S,1,2
+251311,Environmental Health Officer,R,R,R,R,R,R,R,R,S,1,2
+251312,Occupational Health and Safety Adviser,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251411,Optometrist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251412,Orthoptist,S,S,S,S,S,S,S,NS,S,1,2
+251511,Hospital Pharmacist,R,R,R,R,R,R,R,R,S,1,2
+251512,Industrial Pharmacist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251513,Retail Pharmacist,S,S,S,S,S,S,S,S,S,1,2
+251911,Health Promotion Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+251912,Orthotist or Prosthetist,S,S,S,S,S,S,S,S,S,1,2
+251999,Health Diagnostic and Promotion Professionals nec,S,S,S,S,S,S,S,S,S,1,2
+252111,Chiropractor,S,S,S,S,S,S,S,S,S,1,2
+252112,Osteopath,S,S,S,S,S,S,S,S,S,1,2
+252211,Acupuncturist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+252212,Homoeopath,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+252213,Naturopath,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+252214,Traditional Chinese Medicine Practitioner,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+252299,Complementary Health Therapists nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+252311,Dental Specialist,S,S,S,S,S,S,S,S,S,1,2
+252312,Dentist,S,S,S,S,S,S,S,S,S,1,2
+252411,Occupational Therapist,S,S,S,S,S,S,S,S,S,1,2
+252511,Physiotherapist,S,S,S,S,S,S,S,S,S,1,2
+252611,Podiatrist,S,S,S,S,S,S,S,S,S,1,2
+252711,Audiologist,S,S,S,S,S,S,S,S,S,1,2
+252712,Speech Pathologist / Speech Language Therapist,S,S,S,S,S,S,S,S,S,1,2
+253111,General Practitioner,S,S,S,S,S,S,S,S,S,1,2
+253112,Resident Medical Officer,S,S,S,S,S,S,S,S,S,1,2
+253211,Anaesthetist,S,S,S,S,S,S,S,S,S,1,2
+253311,Specialist Physician (General Medicine),S,S,S,S,S,S,S,S,S,1,2
+253312,Cardiologist,S,S,S,S,S,S,S,S,S,1,2
+253313,Clinical Haematologist,S,S,S,S,S,S,NS,NS,S,1,2
+253314,Medical Oncologist,S,S,S,S,S,S,S,S,S,1,2
+253315,Endocrinologist,S,S,S,S,S,S,S,NS,S,1,2
+253316,Gastroenterologist,S,S,S,S,S,S,S,NS,S,1,2
+253317,Intensive Care Specialist,S,S,S,S,S,S,S,S,S,1,2
+253318,Neurologist,S,S,S,S,S,S,S,NS,S,1,2
+253321,Paediatrician,S,S,S,S,S,S,S,S,S,1,2
+253322,Renal Medicine Specialist,S,S,S,S,S,S,S,S,S,1,2
+253323,Rheumatologist,S,S,S,S,S,S,S,NS,S,1,2
+253324,Thoracic Medicine Specialist,S,S,S,S,S,S,S,S,S,1,2
+253399,Specialist Physicians nec,S,S,S,S,S,S,S,S,S,1,2
+253411,Psychiatrist,S,S,S,S,S,S,S,S,S,1,2
+253511,Surgeon (General),S,S,S,S,S,S,S,S,S,1,2
+253512,Cardiothoracic Surgeon,S,S,S,S,S,S,S,NS,S,1,2
+253513,Neurosurgeon,S,S,S,S,S,S,S,S,S,1,2
+253514,Orthopaedic Surgeon,S,S,S,S,S,S,S,S,S,1,2
+253515,Otorhinolaryngologist,S,S,S,S,S,S,S,NS,NS,1,2
+253516,Paediatric Surgeon,S,S,S,S,S,S,S,NS,NS,1,2
+253517,Plastic and Reconstructive Surgeon,S,S,S,S,S,S,S,S,S,1,2
+253518,Urologist,S,S,S,S,S,S,S,NS,S,1,2
+253521,Vascular Surgeon,S,S,S,S,S,S,S,S,NS,1,2
+253911,Dermatologist,S,S,S,S,S,S,S,S,S,1,2
+253912,Emergency Medicine Specialist,S,S,S,S,S,S,S,S,S,1,2
+253913,Obstetrician and Gynaecologist,S,S,S,S,S,S,S,S,S,1,2
+253914,Ophthalmologist,S,S,S,S,S,S,S,S,S,1,2
+253915,Pathologist,S,S,S,S,S,S,S,S,S,1,2
+253917,Diagnostic and Interventional Radiologist,S,S,S,S,S,S,S,S,S,1,2
+253918,Radiation Oncologist,S,S,S,S,S,S,S,S,S,1,2
+253999,Medical Practitioners nec,S,S,S,S,S,S,S,S,S,1,2
+254111,Midwife,S,S,S,S,S,S,S,S,S,1,2
+254211,Nurse Educator,NS,NS,S,NS,R,NS,NS,S,S,1,2
+254212,Nurse Researcher,NS,NS,NS,S,S,NS,NS,S,S,1,2
+254311,Nurse Manager,NS,NS,NS,NS,R,NS,NS,NS,NS,1,2
+254411,Nurse Practitioner,S,S,S,S,S,S,S,S,S,1,2
+254412,Registered Nurse (Aged Care),S,S,S,S,S,S,S,S,S,1,2
+254413,Registered Nurse (Child and Family Health),S,S,S,S,S,S,S,S,S,1,2
+254414,Registered Nurse (Community Health),S,S,S,S,S,S,S,S,S,1,2
+254415,Registered Nurse (Critical Care and Emergency),S,S,S,S,S,S,S,S,S,1,2
+254416,Registered Nurse (Developmental Disability),S,S,S,S,NS,NS,NS,NS,NS,1,2
+254417,Registered Nurse (Disability and Rehabilitation),S,S,S,S,S,S,S,S,S,1,2
+254418,Registered Nurse (Medical),R,R,R,R,R,R,R,R,S,1,2
+254421,Registered Nurse (Medical Practice),R,R,R,R,R,R,R,R,S,1,2
+254422,Registered Nurse (Mental Health),S,S,S,S,S,S,S,S,S,1,2
+254423,Registered Nurse (Perioperative),S,S,S,S,S,S,S,S,S,1,2
+254424,Registered Nurse (Surgical),R,R,R,R,R,R,R,R,S,1,2
+254425,Registered Nurse (Paediatrics),S,S,S,S,S,S,S,S,S,1,2
+254499,Registered Nurses nec,NS,NS,NS,NS,NS,NS,NS,S,NS,1,2
+261111,ICT Business Analyst,NS,NS,NS,NS,NS,NS,NS,S,NS,1,2
+261112,Systems Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261113,User Experience Designer (ICT),NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261211,Multimedia Specialist,NS,NS,NS,NS,NS,NS,NS,S,S,1,2
+261212,Web Developer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261311,Analyst Programmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261312,Developer Programmer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261313,Software Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261314,Software Tester,S,S,S,S,S,S,S,S,S,1,2
+261315,Cyber Security Engineer,S,S,S,S,S,S,S,S,S,1,2
+261316,Devops Engineer,S,S,S,S,S,S,S,NS,S,1,2
+261317,Penetration Tester,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+261399,Software and Applications Programmers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+262111,Database Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+262113,Systems Administrator,NS,NS,NS,NS,NS,NS,NS,S,NS,1,2
+262114,Cyber Governance Risk and Compliance Specialist,S,S,S,S,S,S,S,NS,S,1,2
+262115,Cyber Security Advice and Assessment Specialist,NS,NS,NS,NS,NS,NS,NS,S,S,1,2
+262116,Cyber Security Analyst,NS,NS,NS,S,S,NS,NS,NS,S,1,2
+262117,Cyber Security Architect,S,S,S,S,S,S,NS,NS,S,1,2
+262118,Cyber Security Operations Coordinator,S,S,S,S,S,S,S,S,S,1,2
+263111,Computer Network and Systems Engineer,NS,NS,NS,NS,NS,NS,NS,S,NS,1,2
+263112,Network Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263113,Network Analyst,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263211,ICT Quality Assurance Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263212,ICT Support Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263213,ICT Systems Test Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263299,ICT Support and Test Engineers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263311,Telecommunications Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+263312,Telecommunications Network Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+271111,Barrister,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+271214,Intellectual Property Lawyer,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+271299,Judicial and Other Legal Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+271311,Solicitor,S,S,S,S,S,S,S,S,S,1,2
+272111,Careers Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272112,Drug and Alcohol Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272113,Family and Marriage Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272114,Rehabilitation Counsellor,S,S,S,S,S,S,S,S,S,1,2
+272115,Student Counsellor,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272199,Counsellors nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272211,Minister of Religion,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272311,Clinical Psychologist,S,S,S,S,S,S,S,S,S,1,2
+272312,Educational Psychologist,S,S,S,S,S,S,S,S,S,1,2
+272313,Organisational Psychologist,S,S,S,S,S,S,S,NS,S,1,2
+272314,Psychotherapist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272399,Psychologists nec,S,S,S,S,S,S,S,S,S,1,2
+272411,Historian,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272412,Interpreter,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272413,Translator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272414,Archaeologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272499,Social Professionals nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272511,Social Worker,NS,NS,R,NS,S,NS,NS,S,S,1,2
+272611,Community Arts Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272612,Recreation Officer / Recreation Coordinator,NS,NS,NS,NS,NS,NS,NS,NS,NS,1,2
+272613,Welfare Worker,NS,NS,R,NS,NS,NS,NS,S,NS,1,2
+311112,Agricultural and Agritech Technician,S,S,S,S,S,S,S,S,S,2,3
+311113,Animal Husbandry Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311114,Aquaculture or Fisheries Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311115,Irrigation Designer,S,S,S,S,S,S,S,NS,NS,2,3
+311211,Anaesthetic Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311212,Cardiac Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311213,Medical Laboratory Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311214,Operating Theatre Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+311215,Pharmacy Technician,R,R,R,R,R,R,R,S,S,2,3
+311216,Pathology Collector / Phlebotomist,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+311217,Respiratory Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311299,Medical Technicians nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311311,Fisheries Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311312,Meat Inspector,S,S,S,S,S,S,S,NS,NS,2,3
+311313,Biosecurity Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311314,Primary Products Quality Assurance Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311399,Primary Products Assurance and Inspection Officers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311411,Chemistry Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311412,Earth Science Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311413,Life Science Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311414,School Laboratory Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311415,Hydrographer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+311499,Science Technicians nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312111,Architectural Draftsperson,NS,NS,NS,NS,NS,NS,NS,S,NS,2,3
+312112,Building Associate,NS,NS,NS,NS,NS,NS,NS,S,NS,2,3
+312113,Building Inspector,S,S,S,S,S,S,S,S,S,2,3
+312114,Construction Estimator,R,S,R,R,R,S,R,NS,NS,2,3
+312115,Plumbing Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312116,Surveying or Spatial Science Technician,S,S,S,S,S,S,S,S,S,2,3
+312199,"Architectural, Building and Surveying Technicians nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312211,Civil Engineering Draftsperson,S,S,S,S,S,S,S,S,S,2,3
+312212,Civil Engineering Technician,S,S,S,S,S,S,S,S,S,2,3
+312311,Electrical Engineering Draftsperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312312,Electrical Engineering Technician,M,M,M,M,M,M,M,M,S,2,3
+312411,Electronic Engineering Draftsperson,NS,S,NS,NS,NS,S,NS,NS,NS,2,3
+312412,Electronic Engineering Technician,S,S,S,S,S,S,S,S,S,2,3
+312511,Mechanical Engineering Draftsperson,S,S,S,S,S,S,S,S,S,2,3
+312512,Mechanical Engineering Technician,S,S,S,S,S,S,S,S,S,2,3
+312611,Safety Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312911,Maintenance Planner,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312912,Metallurgical or Materials Technician,S,S,S,S,S,S,S,S,S,2,3
+312913,Mine Deputy,NS,NS,NS,NS,NS,R,NS,NS,NS,2,3
+312914,Other Draftsperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+312999,Building and Engineering Technicians nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313111,Hardware Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313112,ICT Customer Support Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313113,Web Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313199,ICT Support Technicians nec,NS,NS,NS,NS,NS,NS,NS,S,NS,2,3
+313211,Radiocommunications Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313212,Telecommunications Field Engineer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313213,Telecommunications Network Planner,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+313214,Telecommunications Technical Officer or Technologist,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+321111,Automotive Electrician,S,S,S,S,S,S,S,S,S,3,3
+321211,Motor Mechanic (General),S,S,S,S,S,S,S,S,S,3,3
+321212,Diesel Motor Mechanic,S,S,S,S,S,S,S,S,S,3,3
+321213,Motorcycle Mechanic,S,S,S,S,S,S,S,S,S,3,3
+321214,Small Engine Mechanic,S,S,S,S,S,S,S,S,S,3,3
+322111,Blacksmith,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+322112,Electroplater,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+322113,Farrier,S,S,S,S,S,S,S,NS,S,3,3
+322114,Metal Casting Trades Worker,S,S,S,S,S,S,S,NS,NS,3,3
+322115,Metal Polisher,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+322211,Sheetmetal Worker,S,S,S,S,S,S,S,S,S,3,3
+322311,Metal Fabricator,S,S,S,S,S,S,S,S,S,3,3
+322312,Pressure Welder,S,S,S,S,S,S,NS,NS,NS,3,3
+322313,Welder (First Class),S,S,S,S,S,S,S,S,S,3,3
+323111,Aircraft Maintenance Engineer (Avionics),S,S,S,S,S,S,S,S,S,3,3
+323112,Aircraft Maintenance Engineer (Mechanical),S,S,S,S,S,S,S,S,S,3,3
+323113,Aircraft Maintenance Engineer (Structures),S,S,S,S,S,S,NS,S,NS,3,3
+323211,Fitter (General),S,S,S,S,S,S,S,S,S,3,3
+323212,Fitter and Turner,S,S,S,S,S,S,S,S,S,3,3
+323213,Fitter-Welder,S,S,S,S,S,S,S,S,S,3,3
+323214,Metal Machinist (First Class),S,S,S,S,S,S,S,S,S,3,3
+323215,"Textile, Clothing and Footwear Mechanic",NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+323299,Metal Fitters and Machinists nec,NS,S,NS,NS,NS,NS,NS,S,NS,3,3
+323311,Engraver,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+323312,Gunsmith,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+323313,Locksmith,S,S,S,S,S,S,S,S,S,3,3
+323314,Precision Instrument Maker and Repairer,S,S,S,S,S,S,S,S,S,3,3
+323315,Saw Doctor,S,S,S,S,S,S,S,NS,NS,3,3
+323316,Watch and Clock Maker and Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+323411,Engineering Patternmaker,S,S,S,S,S,S,S,NS,NS,3,3
+323412,Toolmaker,S,S,S,S,S,S,S,NS,S,3,3
+324111,Panelbeater,S,S,S,S,S,S,S,S,S,3,3
+324211,Vehicle Body Builder,S,S,S,S,S,S,S,S,S,3,3
+324212,Vehicle Trimmer,S,S,S,S,S,S,S,S,S,3,3
+324311,Vehicle Painter,S,S,S,S,S,S,S,S,S,3,3
+331111,Bricklayer,S,S,S,S,S,S,S,S,S,3,3
+331112,Stonemason,S,S,S,S,S,S,S,S,S,3,3
+331211,Carpenter and Joiner,S,S,S,S,S,S,S,S,S,3,3
+331212,Carpenter,S,S,S,S,S,S,S,S,S,3,3
+331213,Joiner,S,S,S,S,S,S,S,S,S,3,3
+332111,Floor Finisher,S,S,S,S,S,S,S,S,S,3,3
+332211,Painter,S,S,S,S,S,S,S,S,S,3,3
+333111,Glazier,S,S,S,S,S,S,S,S,S,3,3
+333211,Plasterer (Wall and Ceiling),S,S,S,S,S,S,S,S,S,3,3
+333212,Renderer (Solid Plaster),S,S,S,S,S,S,S,S,S,3,3
+333311,Roof Tiler,S,S,S,S,S,S,S,S,S,3,3
+333411,Wall and Floor Tiler,S,S,S,S,S,S,S,S,S,3,3
+334112,Airconditioning and Mechanical Services Plumber,S,S,S,S,S,S,S,S,S,3,3
+334113,Drainer,S,S,S,S,S,S,S,S,S,3,3
+334114,Gasfitter,S,S,S,S,S,S,S,S,S,3,3
+334115,Roof Plumber,S,S,S,S,S,S,S,S,S,3,3
+334116,Plumber (General),S,S,S,S,S,S,S,S,S,3,3
+334117,Fire Protection Plumber,S,S,S,S,S,S,S,S,S,3,3
+341111,Electrician (General),S,S,S,S,S,S,S,S,S,3,3
+341112,Electrician (Special Class),S,S,S,S,S,S,NS,S,NS,3,3
+341113,Lift Mechanic,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+342111,Airconditioning and Refrigeration Mechanic,S,S,S,S,S,S,S,S,S,3,3
+342211,Electrical Linesworker / Electrical Line Mechanic,S,S,S,S,S,S,S,S,S,3,3
+342212,Technical Cable Jointer,S,S,S,S,S,S,S,S,S,3,3
+342311,Business Machine Mechanic,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+342312,Communications Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+342313,Electronic Equipment Trades Worker,R,R,R,R,R,R,R,R,S,3,3
+342314,Electronic Instrument Trades Worker (General),S,S,S,S,S,S,S,S,S,3,3
+342315,Electronic Instrument Trades Worker (Special Class),S,S,S,S,S,S,S,S,NS,3,3
+342411,Cabler (Data and Telecommunications),S,S,S,S,S,S,S,S,S,3,3
+342412,Telecommunications Cable Jointer,S,S,S,S,S,S,S,NS,S,3,3
+342413,Telecommunications Linesworker / Telecommunications Line Mechanic,S,S,S,S,S,S,S,S,S,3,3
+342414,Telecommunications Technician,S,S,S,S,S,S,S,S,S,3,3
+351111,Baker,S,S,S,S,S,S,S,S,S,3,3
+351112,Pastrycook,R,R,R,R,R,R,R,R,S,3,3
+351211,Butcher or Smallgoods Maker,S,S,S,S,S,S,S,S,S,3,3
+351311,Chef,R,R,R,R,R,R,R,S,S,2,3
+351411,Cook,S,S,S,S,S,S,S,S,S,3,3
+361111,Dog Handler or Trainer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+361112,Horse Trainer,S,S,S,S,S,S,S,S,S,3,3
+361113,Pet Groomer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,3
+361114,Zookeeper,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+361115,Kennel Hand,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,3
+361116,Track Rider,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+361199,Animal Attendants and Trainers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,3
+361311,Veterinary Nurse,S,S,S,S,S,S,S,S,S,3,3
+362111,Florist,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+362312,Sports Turf Manager,S,S,S,S,S,S,S,S,S,2,3
+362313,Sports Turf Trades Worker,NS,NS,NS,NS,S,NS,NS,NS,NS,3,3
+362411,Nurseryperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+362511,Arborist,S,S,S,S,S,S,S,S,S,2,3
+362512,Tree Worker,S,S,S,S,S,S,S,S,S,3,3
+362611,Gardener (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+362711,Landscape Gardener,S,S,S,S,S,S,S,S,S,3,3
+362712,Irrigation Technician,S,S,S,S,S,S,S,S,S,3,3
+363111,Aquaculture Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363112,Fishing Leading Hand,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363113,Forestry Operations Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363114,Horticultural Supervisor or Specialist,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363115,Senior Broadacre Crop and Livestock Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363116,Senior Broadacre Crop Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363117,Vineyard Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363199,"Senior Aquaculture, Crop and Forestry Workers nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363211,Senior Beef Cattle Station Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363212,Senior Cattle and Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363213,Senior Dairy Cattle Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363214,Senior Piggery Stockperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363215,Senior Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363299,Senior Livestock Farm Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363311,Shearer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+363312,Wool Classer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+391111,Hairdresser,S,S,S,S,S,S,S,S,S,3,3
+392111,Print Finisher,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+392112,Screen Printer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+392211,Graphic Pre-press Trades Worker,S,S,S,S,S,S,S,NS,S,3,3
+392311,Printing Machinist,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+392312,Small Offset Printer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393111,Canvas Goods Fabricator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393112,Leather Goods Maker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393113,Sail Maker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393114,Shoemaker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393211,Apparel Cutter,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393212,Clothing Patternmaker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393213,Dressmaker or Tailor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393299,Clothing Trades Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+393311,Upholsterer,S,S,S,S,S,S,S,S,S,3,3
+394112,Cabinet Maker,S,S,S,S,S,S,S,S,S,3,3
+394113,Furniture Maker,S,S,S,S,S,S,S,S,S,3,3
+394211,Furniture Finisher,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+394212,Picture Framer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+394213,Wood Machinist,S,S,S,S,S,S,S,NS,NS,3,3
+394214,Wood Turner,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+394299,Wood Machinists and Other Wood Trades Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399111,Boat Builder and Repairer,S,S,S,S,S,S,S,S,S,3,3
+399112,Shipwright,S,S,S,S,S,S,S,S,NS,3,3
+399211,Chemical Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399212,Gas or Petroleum Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399213,Power Generation Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399311,Gallery or Museum Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+399312,Library Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+399411,Jeweller,S,S,S,S,S,S,S,S,S,3,3
+399511,Broadcast Transmitter Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399512,"Camera Operator (Film, Television or Video)",NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399513,Light Technician,S,S,S,S,S,S,S,S,S,3,3
+399514,Make Up Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399515,Musical Instrument Maker or Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399516,Sound Technician,S,S,S,S,S,S,S,S,S,3,3
+399517,Television Equipment Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399599,Performing Arts Technicians nec,NS,S,NS,NS,NS,S,NS,NS,NS,3,3
+399611,Signwriter,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399911,Diver,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399912,Interior Decorator,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,3
+399913,Optical Dispenser / Dispensing Optician,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399914,Optical Mechanic,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,3
+399915,Photographer's Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,3
+399916,Plastics Technician,NS,S,NS,NS,NS,NS,NS,NS,NS,3,3
+399918,Fire Protection Equipment Technician,R,R,R,R,R,R,R,R,S,3,3
+399999,Technicians and Trades Workers nec,NS,S,NS,NS,NS,NS,NS,S,NS,3,3
+411111,Ambulance Officer,S,S,S,S,S,S,S,S,S,2,4
+411112,Intensive Care Ambulance Paramedic,S,S,S,S,S,S,S,S,S,1,4
+411211,Dental Hygienist,S,S,S,S,S,S,S,S,S,1,4
+411212,Dental Prosthetist,S,S,S,S,S,S,S,NS,S,2,4
+411213,Dental Technician,S,S,S,S,S,S,S,S,S,2,4
+411214,Dental Therapist,S,S,S,S,S,S,S,S,S,1,4
+411311,Diversional Therapist,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+411411,Enrolled Nurse,R,R,R,R,R,R,R,R,S,2,4
+411412,Mothercraft Nurse,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+411511,Aboriginal and Torres Strait Islander Health Worker,S,S,S,S,S,S,S,S,S,2,4
+411611,Massage Therapist,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+411711,Community Worker,NS,NS,NS,NS,NS,S,NS,S,NS,2,4
+411712,Disabilities Services Officer,NS,R,NS,NS,NS,S,NS,S,NS,2,4
+411713,Family Support Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+411714,Parole or Probation Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+411715,Residential Care Officer,NS,NS,NS,NS,NS,S,NS,S,NS,2,4
+411716,Youth Worker,NS,NS,NS,NS,NS,S,NS,S,NS,2,4
+421111,Child Care Worker,S,S,S,S,S,S,S,S,S,3,4
+421112,Family Day Care Worker,NS,R,NS,NS,R,NS,NS,NS,S,4,4
+421113,Nanny,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+421114,Out of School Hours Care Worker,R,R,R,R,R,R,R,R,S,3,4
+422111,Aboriginal and Torres Strait Islander Education Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+422112,Integration Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+422115,Preschool Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+422116,Teachers' Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+423111,Aged or Disabled Carer,S,S,S,S,S,S,S,S,S,4,4
+423211,Dental Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+423311,Hospital Orderly,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+423312,Nursing Support Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+423313,Personal Care Assistant,NS,NS,NS,NS,NS,S,NS,S,NS,4,4
+423314,Therapy Aide,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+423411,Child or Youth Residential Care Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+423412,Hostel Parent,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+423413,Refuge Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+431111,Bar Attendant,NS,NS,NS,NS,NS,NS,NS,S,NS,4,4
+431112,Barista,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+431311,Gaming Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+431411,Hotel Service Manager,NS,NS,NS,NS,NS,S,NS,S,NS,2,4
+431511,Waiter,NS,NS,NS,NS,NS,NS,NS,S,NS,4,4
+441211,Emergency Service Worker,NS,S,NS,NS,S,NS,NS,NS,NS,3,4
+441212,Fire Fighter,NS,S,NS,NS,NS,NS,NS,NS,NS,3,4
+441312,Police Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+442111,Prison Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+442213,Crowd Controller,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+442214,Private Investigator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+442216,Security Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+442217,Security Officer,NS,S,NS,NS,S,NS,NS,S,NS,4,4
+451111,Beauty Therapist,S,S,S,S,S,S,S,S,S,3,4
+451211,Driving Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+451311,Funeral Director,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+451399,Funeral Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+451411,Gallery or Museum Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451412,Tour Guide,S,S,S,S,S,S,S,S,S,3,4
+451511,Natural Remedy Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451512,Weight Loss Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451513,Herbalist (Western),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451611,Tourist Information Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451612,Travel Consultant,S,S,S,S,S,S,S,S,S,3,4
+451711,Flight Attendant,R,R,R,R,R,R,R,R,S,3,4
+451799,Travel Attendants nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451811,Civil Celebrant,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+451814,Body Artist,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451815,First Aid Trainer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+451816,Religious Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+451899,Personal Service Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+452111,Fitness Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+452211,Bungy Jump Master,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+452212,Fishing Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452213,Hunting Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452214,Mountain or Glacier Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+452215,Outdoor Adventure Instructor,S,S,S,S,S,S,S,S,S,3,4
+452216,Trekking Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452217,Whitewater Rafting Guide,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452299,Outdoor Adventure Guides nec,S,S,S,S,S,S,S,NS,NS,3,4
+452311,Diving Instructor (Open Water),NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452312,Gymnastics Coach or Instructor,S,S,S,S,S,S,S,S,S,4,4
+452313,Horse Riding Coach or Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452314,Snowsport Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452315,Swimming Coach or Instructor,S,S,S,S,S,S,S,S,S,4,4
+452316,Tennis Coach,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+452317,Other Sports Coach or Instructor,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,4
+452318,Dog and Horse Racing Official,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452321,Sports Development Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,4
+452322,Sports Umpire,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452323,Other Sports Official,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452413,Jockey,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+452414,Lifeguard,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,4
+511111,Contract Administrator,NS,NS,NS,NS,S,S,NS,NS,NS,2,5
+511112,Program or Project Administrator,NS,NS,NS,NS,NS,S,NS,S,NS,2,5
+512111,Office Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+512211,Health Practice Manager,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+512299,Practice Managers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+521111,Personal Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+521211,Secretary (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+521212,Legal Secretary,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+531111,General Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+532111,Data Entry Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+532112,Machine Shorthand Reporter,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+532113,Word Processing Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+541111,Call or Contact Centre Team Leader,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+541112,Call or Contact Centre Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+541211,Information Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+542111,Receptionist (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+542112,Admissions Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+542113,Hotel or Motel Receptionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+542114,Medical Receptionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+551111,Accounts Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+551112,Cost Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+551211,Bookkeeper,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+551311,Payroll Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+552111,Bank Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+552211,Credit or Loans Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+552311,Bookmaker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+552312,Insurance Consultant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+552313,Money Market Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+552314,Statistical Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591112,Production Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591113,Purchasing Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591115,Stock Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591116,Warehouse Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591117,Order Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591211,Despatching and Receiving Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+591212,Import-Export Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599111,Conveyancer,S,S,S,S,S,S,S,S,S,2,5
+599112,Legal Executive,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+599211,Clerk of Court,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599212,Court Bailiff or Sheriff,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599213,Court Orderly,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599214,Law Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599215,Trust Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599311,Debt Collector,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599411,Human Resource Clerk,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599511,Customs Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599512,Immigration Officer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599513,Motor Vehicle Licence Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599514,"Invasive Pest, Weed and Disease Inspector",NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599515,Social Security Assessor,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599516,Taxation Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599517,Train Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599518,Transport Operations Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599521,Water Inspector,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599599,Inspectors and Regulatory Officers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599611,Insurance Investigator,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599612,Insurance Loss Adjuster,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,5
+599613,Insurance Risk Surveyor,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,5
+599711,Library Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599912,"Production Assistant (Film, Television, Radio or Stage)",NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599913,Proof Reader,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599914,Radio Despatcher,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599915,Clinical Coder,S,S,S,S,S,S,S,S,S,3,5
+599916,Facilities Administrator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+599999,Clerical and Administrative Workers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,5
+611111,Auctioneer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+611112,Stock and Station Agent,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+611211,Insurance Agent,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+611311,Sales Representative (Building and Plumbing Supplies),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+611312,Sales Representative (Business Services),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+611313,Sales Representative (Motor Vehicle Parts and Accessories),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+611314,Sales Representative (Personal and Household Goods),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+611399,Sales Representatives nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+612111,Business Broker,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+612112,Property Manager,NS,NS,NS,NS,NS,S,NS,S,NS,3,6
+612113,Real Estate Agency Principal / Real Estate Agency Licensee,NS,NS,NS,NS,NS,NS,NS,NS,NS,2,6
+612114,Real Estate Agent,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+612115,Real Estate Representative,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+621311,Motor Vehicle or Caravan Salesperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+621312,Motor Vehicle Parts Interpreter / Automotive Parts Salesperson,NS,NS,NS,S,NS,NS,S,S,S,4,6
+621411,Pharmacy Sales Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+621511,Retail Supervisor,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+639211,Retail Buyer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+639212,Wool Buyer,NS,NS,NS,NS,NS,NS,NS,NS,NS,3,6
+639511,Visual Merchandiser,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+639911,Other Sales Support Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,6
+711111,Clay Products Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711112,Concrete Products Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711113,Glass Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711114,Stone Processing Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711199,"Clay, Concrete, Glass and Stone Processing Machine Operators nec",NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711211,Industrial Spraypainter,S,S,S,S,S,S,S,S,S,4,7
+711311,Paper Products Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711313,Sawmilling Operator,S,S,S,S,S,S,S,NS,S,4,7
+711314,Other Wood Processing Machine Operator,S,S,S,S,S,S,S,S,S,4,7
+711411,Photographic Developer and Printer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711511,Plastic Cablemaking Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711512,Plastic Compounding and Reclamation Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711513,Plastics Fabricator or Welder,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711514,Plastics Production Machine Operator (General),NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711515,Reinforced Plastic and Composite Production Worker,S,S,S,S,S,S,S,NS,NS,4,7
+711516,Rubber Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711599,Plastics and Rubber Production Machine Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711611,Sewing Machinist,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711711,Footwear Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711712,Hide and Skin Processing Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711713,Knitting Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711714,Textile Dyeing and Finishing Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711715,Weaving Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711716,Yarn Carding and Spinning Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711799,Textile and Footwear Production Machine Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711911,Chemical Production Machine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711912,Motion Picture Projectionist,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711913,Sand Blaster,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711914,Sterilisation Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+711999,Machine Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712111,"Crane, Hoist or Lift Operator",S,S,S,S,S,S,S,S,S,4,7
+712211,Driller,S,S,S,S,S,S,S,S,S,4,7
+712212,Miner,R,R,R,R,R,R,R,NS,NS,4,7
+712213,Shot Firer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712311,Engineering Production Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712911,Boiler or Engine Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712912,Bulk Materials Handling Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712913,Cement Production Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712914,Concrete Batching Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712915,Concrete Pump Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712916,Paper and Pulp Mill Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712917,Railway Signal Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712918,Train Controller,NS,S,NS,NS,NS,S,NS,NS,NS,4,7
+712921,Waste Water or Water Plant Operator,NS,S,S,NS,NS,NS,NS,NS,NS,4,7
+712922,Weighbridge Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+712999,Stationary Plant Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+721111,Agricultural and Horticultural Mobile Plant Operator,R,R,R,R,R,R,R,R,S,4,7
+721112,Logging Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+721211,Earthmoving Plant Operator (General),R,R,R,R,R,R,R,R,S,4,7
+721212,Backhoe Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+721213,Bulldozer Operator,S,S,S,S,S,S,S,S,NS,4,7
+721214,Excavator Operator,S,S,S,S,S,S,S,S,S,4,7
+721215,Grader Operator,S,S,S,S,S,S,S,S,S,4,7
+721216,Loader Operator,S,S,S,S,S,S,S,S,S,4,7
+721311,Forklift Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+721911,Aircraft Baggage Handler and Airline Ground Crew,NS,NS,NS,NS,NS,S,NS,S,NS,4,7
+721912,Linemarker,S,S,S,S,S,S,S,S,S,4,7
+721913,Paving Plant Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+721914,Railway Track Plant Operator,S,S,S,S,S,S,S,NS,NS,4,7
+721915,Road Roller Operator,S,S,S,S,S,S,S,S,NS,4,7
+721916,Streetsweeper Operator,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+721999,Mobile Plant Operators nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+731111,Chauffeur,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+731112,Taxi Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+731199,Automobile Drivers nec,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+731211,Bus Driver,S,S,S,S,S,S,S,S,S,4,7
+731212,Charter and Tour Bus Driver,S,S,S,S,S,S,S,S,S,4,7
+731213,Passenger Coach Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+731311,Train Driver,R,R,R,R,R,R,R,R,S,4,7
+731312,Tram Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+732111,Delivery Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+733111,Truck Driver (General),S,S,S,S,S,S,S,S,S,4,7
+733112,Aircraft Refueller,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+733113,Furniture Removalist,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+733114,Tanker Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+733115,Tow Truck Driver,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+741111,Storeperson,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,7
+811611,Carpet Cleaner,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+821311,Fencer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+821411,Building Insulation Installer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+821412,Home Improvement Installer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+821611,Railway Track Worker,S,S,S,S,S,S,S,S,S,4,8
+821711,Construction Rigger,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+821712,Scaffolder,S,S,S,S,S,S,S,S,S,4,8
+821713,Steel Fixer,S,S,S,S,S,S,S,S,S,4,8
+821714,Structural Steel Erector,S,S,S,S,S,S,NS,S,S,4,8
+821911,Crane Chaser,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+831211,Meat Boner and Slicer,NS,S,NS,NS,NS,S,NS,NS,NS,4,8
+831212,Slaughterer,NS,S,NS,NS,NS,S,NS,NS,NS,4,8
+839311,Product Examiner,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+839312,Product Grader,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+839313,Product Tester,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842211,Cotton Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842214,"Grain, Oilseed, Pulse and Pasture Farm Worker",NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842217,Sugar Cane Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842222,Vineyard Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842311,Beef Cattle Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842312,Cattle and Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842313,Dairy Cattle Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842314,Livestock Husbandry Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842315,Piggery Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842316,Poultry Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+842317,Sheep Farm Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+843111,Forestry Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+843112,Logging Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+843113,Tree Faller,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+843411,Pest Control Technician,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+899211,Deck Hand,S,S,S,S,S,S,S,S,S,4,8
+899212,Fishing Hand,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+899411,Motor Vehicle Parts and Accessories Fitter (General),S,S,S,S,S,S,S,S,S,4,8
+899412,Autoglazier,S,S,S,S,S,S,S,S,S,4,8
+899413,Exhaust and Muffler Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+899414,Radiator Repairer,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+899415,Tyre Fitter,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+899511,Printer's Assistant,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
+899512,Printing Table Worker,NS,NS,NS,NS,NS,NS,NS,NS,NS,4,8
