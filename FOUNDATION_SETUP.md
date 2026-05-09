@@ -61,7 +61,13 @@ Outputs:
 Validate boundary/API consistency:
 
 ```bash
-python3 apps/api/scripts/validate_boundary_consistency.py
+npm run check:boundaries
+```
+
+Build latest labour-market snapshot CSV from ABS workbook:
+
+```bash
+npm run build:labour-market
 ```
 
 To point web to another API base URL:
@@ -81,5 +87,6 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000 npm run dev:web
   - Industries
   - Evidence links
 
-- Occupations and national/state shortage categories now ingest from real OSL source data.
-- Labour market and industry panels are still mocked and are next to replace.
+- Occupations and national/state shortage categories ingest from real OSL source data.
+- Labour market panel ingests from real ABS LFS Table 12 state snapshot.
+- Industry panel is still mocked and is the next replacement target.

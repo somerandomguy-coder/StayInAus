@@ -13,6 +13,7 @@ from app.data_pipeline import (
     DataLoadError,
     FileFormat,
     OccupationShortageRow,
+    load_real_labour_market_dataset,
     load_real_occupation_dataset,
     read_table,
 )
@@ -100,6 +101,18 @@ class DataPipelineTests(unittest.TestCase):
         ratings = dataset.shortage_matrix["software-engineer"]
         self.assertEqual(ratings["AU"], ShortageCategory.NO_SHORTAGE)
         self.assertEqual(ratings["NT"], ShortageCategory.NO_SHORTAGE)
+
+    def test_load_real_labour_market_dataset(self) -> None:
+        dataset = load_real_labour_market_dataset()
+        self.assertEqual(dataset.latest_month, "2026-03")
+        self.assertIn("AU", dataset.by_geo_code)
+        self.assertIn("NSW", dataset.by_geo_code)
+
+        nsw = dataset.by_geo_code["NSW"]
+        self.assertGreater(nsw.population, 1_000_000)
+        self.assertGreater(nsw.employment, 1_000_000)
+        self.assertGreaterEqual(nsw.unemployment_rate, 0)
+        self.assertLessEqual(nsw.unemployment_rate, 100)
 
 
 if __name__ == "__main__":

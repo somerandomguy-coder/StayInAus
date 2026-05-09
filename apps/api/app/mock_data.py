@@ -2,8 +2,13 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from .data_pipeline import DataLoadError, load_real_occupation_dataset
+from .data_pipeline import (
+    DataLoadError,
+    load_real_labour_market_dataset,
+    load_real_occupation_dataset,
+)
 from .schemas import (
+    DataStatus,
     DetailPanelResponse,
     FitTier,
     GeographyNode,
@@ -386,6 +391,23 @@ ABS_SOURCE = SourceReference(
     url="https://www.abs.gov.au/statistics/labour/employment-and-unemployment",
     last_updated="2026-04-24",
 )
+REAL_LABOUR_MARKET_BY_GEO: dict[str, LabourMarketSnapshot] = {}
+try:
+    _real_labour_dataset = load_real_labour_market_dataset()
+    REAL_LABOUR_MARKET_BY_GEO = _real_labour_dataset.by_geo_code
+    ABS_SOURCE = _real_labour_dataset.source
+except DataLoadError:
+    _real_labour_dataset = None
+
+LABOUR_DATA_STATUS = ABS_SOURCE.data_status
+INDUSTRY_DATA_STATUS = DataStatus.MOCK
+DETAIL_PANEL_DATA_STATUS = (
+    DataStatus.REAL
+    if ACTIVE_DATA_STATUS == DataStatus.REAL
+    and LABOUR_DATA_STATUS == DataStatus.REAL
+    and INDUSTRY_DATA_STATUS == DataStatus.REAL
+    else DataStatus.MOCK
+)
 
 BASE_CATEGORIES = {
     "au": ShortageCategory.SHORTAGE,
@@ -636,6 +658,11 @@ def build_migration_note(
 
 
 def get_labour_market(geography_id: str) -> LabourMarketSnapshot:
+    geo_key = get_real_data_geo_key(geography_id)
+    real_snapshot = REAL_LABOUR_MARKET_BY_GEO.get(geo_key)
+    if real_snapshot:
+        return real_snapshot
+
     entry = LABOUR_MARKET_DATA.get(geography_id)
     if not entry:
         state_id = get_state_id(geography_id)
@@ -739,7 +766,7 @@ def build_detail_panel(
             labour_market=labour_market,
             industries=industries,
         ),
-        meta=ResponseMeta(data_status=ACTIVE_DATA_STATUS),
+        meta=ResponseMeta(data_status=DETAIL_PANEL_DATA_STATUS),
     )
 
 

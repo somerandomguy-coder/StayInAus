@@ -1,6 +1,6 @@
 # Real Data Ingestion Contract (v0.1)
 
-This branch adds the first real-data ingestion path for occupations and shortage ratings.
+This branch adds real-data ingestion paths for occupations/shortage and labour market.
 
 ## Backend data shape
 
@@ -37,6 +37,22 @@ Allowed ratings:
 - `R` = Regional shortage
 - `M` = Metropolitan shortage
 
+### Labour market row contract
+
+The current labour-market CSV row format:
+
+- `geo_code` (`AU|NSW|VIC|QLD|SA|WA|TAS|NT|ACT`)
+- `reference_month` (`YYYY-MM`)
+- `population_15_plus` (persons)
+- `employment` (persons)
+- `unemployment_rate` (percent)
+- `employment_series_type`
+- `unemployment_rate_series_type`
+- `population_series_type`
+- `employment_series_id`
+- `unemployment_rate_series_id`
+- `population_series_id`
+
 ## Loader coverage
 
 `apps/api/app/data_pipeline.py` supports:
@@ -53,8 +69,10 @@ Bad data is rejected during ingestion (`DataLoadError`) when:
 - rating values are outside `{NS,S,R,M}`
 - `anzsco_code` is not 6 digits
 - skill/major group are outside expected ranges
+- labour geography codes are outside supported state/national set
+- unemployment rates are outside `0..100`
 
-## First real source ingested
+## Real sources currently ingested
 
 - Dataset: `jsa_osl_2025_anzsco2022`
 - File: `apps/data/raw/occupation_shortage/2025_osl_anzsco2022.csv`
@@ -62,4 +80,12 @@ Bad data is rejected during ingestion (`DataLoadError`) when:
   - Occupation list (`/api/v1/occupations`)
   - National/state shortage categories used by map/panel
 
-Labour market and industry data are still mock in this branch and will be replaced next.
+- Dataset: `abs_lfs_table12_state_latest`
+- File: `apps/data/raw/labour_market/abs_lfs_state_latest.csv`
+- Source workbook: `apps/data/raw/labour_market/abs_lfs_table12_mar2026.xlsx`
+- Extract script: `apps/api/scripts/extract_abs_labour_market.py`
+- Scope replaced in API:
+  - Labour market panel values (`population`, `employment`, `unemployment_rate`)
+  - State-level values are used directly; SA4 falls back to parent state
+
+Industry data is still mock in this branch and is the next replacement target.

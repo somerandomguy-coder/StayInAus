@@ -14,6 +14,21 @@
       "license": "Australian Government open data terms",
       "sheet_name": "2025 OSL (ANZSCO 2022)",
       "header_row": 8
+    },
+    {
+      "dataset_id": "abs_lfs_table12_state_latest",
+      "dataset_name": "Labour Force Australia Table 12 State Snapshot",
+      "provider": "Australian Bureau of Statistics",
+      "source_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/mar-2026",
+      "download_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/mar-2026/6202012.xlsx",
+      "local_path": "apps/data/raw/labour_market/abs_lfs_state_latest.csv",
+      "file_format": "csv",
+      "last_updated": "2026-03-01",
+      "data_status": "real",
+      "description": "Derived from ABS 6202.0 Table 12 workbook using extract_abs_labour_market.py.",
+      "license": "ABS data terms",
+      "sheet_name": null,
+      "header_row": 1
     }
   ]
 }

@@ -1,0 +1,10 @@
+geo_code,reference_month,population_15_plus,employment,unemployment_rate,employment_series_type,unemployment_rate_series_type,population_series_type,employment_series_id,unemployment_rate_series_id,population_series_id
+AU,2026-03,23084707,14767693,4.3,Seasonally Adjusted,Seasonally Adjusted,Original,A84423043C,A84423050A,A84423091W
+NSW,2026-03,7173041,4575063,4.3,Seasonally Adjusted,Seasonally Adjusted,Original,A84423265K,A84423270C,A84423605V
+VIC,2026-03,5936408,3786177,4.8,Seasonally Adjusted,Seasonally Adjusted,Original,A84423349V,A84423354L,A84423689R
+QLD,2026-03,4723996,3036384,3.7,Seasonally Adjusted,Seasonally Adjusted,Original,A84423279X,A84423284T,A84423619J
+SA,2026-03,1607268,994726,4.0,Seasonally Adjusted,Seasonally Adjusted,Original,A84423363R,A84423368A,A84423703X
+WA,2026-03,2546902,1679055,4.2,Seasonally Adjusted,Seasonally Adjusted,Original,A84423321T,A84423326C,A84423661L
+TAS,2026-03,486614,280077,4.6,Seasonally Adjusted,Seasonally Adjusted,Original,A84423293V,A84423298F,A84423633C
+NT,2026-03,209746,146321,4.6,Trend,Trend,Original,A84424007L,A84424012F,A84423675A
+ACT,2026-03,400732,277785,4.0,Trend,Trend,Original,A84423979L,A84423984F,A84423647T
