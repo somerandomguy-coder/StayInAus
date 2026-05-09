@@ -70,6 +70,12 @@ Build latest labour-market snapshot CSV from ABS workbook:
 npm run build:labour-market
 ```
 
+Build latest industry top-5 snapshot CSV from ABS workbook:
+
+```bash
+npm run build:industry
+```
+
 To point web to another API base URL:
 
 ```bash
@@ -89,4 +95,4 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000 npm run dev:web
 
 - Occupations and national/state shortage categories ingest from real OSL source data.
 - Labour market panel ingests from real ABS LFS Table 12 state snapshot.
-- Industry panel is still mocked and is the next replacement target.
+- Industry panel ingests from real ABS LFS Detailed Table 05 state snapshot.

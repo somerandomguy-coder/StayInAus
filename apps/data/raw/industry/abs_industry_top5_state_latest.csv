@@ -1,0 +1,46 @@
+geo_code,reference_month,industry_rank,industry_name,employment_share,employed_persons,total_employed_persons,series_id,series_type
+AU,2026-02,1,Health Care and Social Assistance,16.3,2406696,14806372,A84601062W,Original
+AU,2026-02,2,"Professional, Scientific and Technical Services",9.7,1432687,14806372,A84601059J,Original
+AU,2026-02,3,Construction,9.3,1375324,14806372,A84601095T,Original
+AU,2026-02,4,Retail Trade,9.2,1358869,14806372,A84601101A,Original
+AU,2026-02,5,Education and Training,8.8,1308205,14806372,A84601041K,Original
+NSW,2026-02,1,Health Care and Social Assistance,15.1,686512,4551305,A84601149L,Original
+NSW,2026-02,2,"Professional, Scientific and Technical Services",11.4,519977,4551305,A84601146F,Original
+NSW,2026-02,3,Construction,9.5,430837,4551305,A84601182R,Original
+NSW,2026-02,4,Retail Trade,9.0,409632,4551305,A84601188C,Original
+NSW,2026-02,5,Education and Training,8.6,390040,4551305,A84601128A,Original
+VIC,2026-02,1,Health Care and Social Assistance,16.4,631996,3845121,A84601671C,Original
+VIC,2026-02,2,"Professional, Scientific and Technical Services",10.3,395161,3845121,A84601668R,Original
+VIC,2026-02,3,Retail Trade,9.7,371764,3845121,A84601710J,Original
+VIC,2026-02,4,Education and Training,9.5,365601,3845121,A84601650T,Original
+VIC,2026-02,5,Construction,9.0,346098,3845121,A84601704L,Original
+QLD,2026-02,1,Health Care and Social Assistance,17.7,537341,3027783,A84601236K,Original
+QLD,2026-02,2,Retail Trade,9.3,282121,3027783,A84601275A,Original
+QLD,2026-02,3,Construction,9.3,281618,3027783,A84601269F,Original
+QLD,2026-02,4,Education and Training,8.6,261333,3027783,A84601215X,Original
+QLD,2026-02,5,"Professional, Scientific and Technical Services",8.2,247824,3027783,A84601233C,Original
+SA,2026-02,1,Health Care and Social Assistance,20.2,201547,998292,A84601758V,Original
+SA,2026-02,2,Retail Trade,8.6,85362,998292,A84601797K,Original
+SA,2026-02,3,Education and Training,8.4,83900,998292,A84601737J,Original
+SA,2026-02,4,Construction,8.3,82959,998292,A84601791W,Original
+SA,2026-02,5,"Professional, Scientific and Technical Services",7.1,70656,998292,A84601755L,Original
+WA,2026-02,1,Health Care and Social Assistance,13.9,233618,1678078,A84601497J,Original
+WA,2026-02,2,Construction,10.3,172525,1678078,A84601530X,Original
+WA,2026-02,3,Retail Trade,9.4,158174,1678078,A84601536L,Original
+WA,2026-02,4,Mining,8.5,143157,1678078,A84601509F,Original
+WA,2026-02,5,Education and Training,8.4,141408,1678078,A84601476W,Original
+TAS,2026-02,1,Health Care and Social Assistance,18.6,52673,282463,A84601323J,Original
+TAS,2026-02,2,Construction,10.5,29622,282463,A84601356C,Original
+TAS,2026-02,3,Retail Trade,9.4,26446,282463,A84601362X,Original
+TAS,2026-02,4,Education and Training,8.1,22809,282463,A84601302W,Original
+TAS,2026-02,5,Public Administration and Safety,7.5,21224,282463,A84601350R,Original
+NT,2026-02,1,Health Care and Social Assistance,19.8,28761,145505,A84601584F,Original
+NT,2026-02,2,Public Administration and Safety,15.3,22197,145505,A84601611A,Original
+NT,2026-02,3,Education and Training,10.1,14732,145505,A84601563V,Original
+NT,2026-02,4,Construction,8.2,11882,145505,A84601617R,Original
+NT,2026-02,5,Accommodation and Food Services,6.9,10060,145505,A84601551K,Original
+ACT,2026-02,1,Public Administration and Safety,28.2,78480,277826,A84601437F,Original
+ACT,2026-02,2,"Professional, Scientific and Technical Services",14.6,40669,277826,A84601407T,Original
+ACT,2026-02,3,Health Care and Social Assistance,12.3,34248,277826,A84601410F,Original
+ACT,2026-02,4,Education and Training,10.2,28381,277826,A84601389X,Original
+ACT,2026-02,5,Construction,7.1,19783,277826,A84601443A,Original

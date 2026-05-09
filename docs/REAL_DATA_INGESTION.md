@@ -1,6 +1,6 @@
 # Real Data Ingestion Contract (v0.1)
 
-This branch adds real-data ingestion paths for occupations/shortage and labour market.
+This branch adds real-data ingestion paths for occupations/shortage, labour market, and industry mix.
 
 ## Backend data shape
 
@@ -53,6 +53,18 @@ The current labour-market CSV row format:
 - `unemployment_rate_series_id`
 - `population_series_id`
 
+### Industry top-5 row contract
+
+- `geo_code` (`AU|NSW|VIC|QLD|SA|WA|TAS|NT|ACT`)
+- `reference_month` (`YYYY-MM`)
+- `industry_rank` (1..5)
+- `industry_name`
+- `employment_share` (percent)
+- `employed_persons`
+- `total_employed_persons`
+- `series_id`
+- `series_type`
+
 ## Loader coverage
 
 `apps/api/app/data_pipeline.py` supports:
@@ -71,6 +83,7 @@ Bad data is rejected during ingestion (`DataLoadError`) when:
 - skill/major group are outside expected ranges
 - labour geography codes are outside supported state/national set
 - unemployment rates are outside `0..100`
+- industry share values are outside `0..100`
 
 ## Real sources currently ingested
 
@@ -88,4 +101,10 @@ Bad data is rejected during ingestion (`DataLoadError`) when:
   - Labour market panel values (`population`, `employment`, `unemployment_rate`)
   - State-level values are used directly; SA4 falls back to parent state
 
-Industry data is still mock in this branch and is the next replacement target.
+- Dataset: `abs_lfs_table05_industry_top5_state_latest`
+- File: `apps/data/raw/industry/abs_industry_top5_state_latest.csv`
+- Source workbook: `apps/data/raw/industry/abs_lfs_table05_feb2026.xlsx`
+- Extract script: `apps/api/scripts/extract_abs_industry_top5.py`
+- Scope replaced in API:
+  - Industry panel top-5 rows by geography
+  - SA4 industry falls back to parent state

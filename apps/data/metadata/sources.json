@@ -29,6 +29,21 @@
       "license": "ABS data terms",
       "sheet_name": null,
       "header_row": 1
+    },
+    {
+      "dataset_id": "abs_lfs_table05_industry_top5_state_latest",
+      "dataset_name": "Employed persons by State and Industry (Top 5 share snapshot)",
+      "provider": "Australian Bureau of Statistics",
+      "source_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia-detailed/feb-2026",
+      "download_url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia-detailed/feb-2026/6291005.xlsx",
+      "local_path": "apps/data/raw/industry/abs_industry_top5_state_latest.csv",
+      "file_format": "csv",
+      "last_updated": "2026-02-01",
+      "data_status": "real",
+      "description": "Derived from ABS Table 05 workbook using extract_abs_industry_top5.py.",
+      "license": "ABS data terms",
+      "sheet_name": null,
+      "header_row": 1
     }
   ]
 }

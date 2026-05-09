@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 from collections import defaultdict
+import json
+import re
+from pathlib import Path
 
 from .data_pipeline import (
     DataLoadError,
+    load_real_industry_dataset,
     load_real_labour_market_dataset,
     load_real_occupation_dataset,
 )
@@ -317,6 +321,82 @@ GEOGRAPHY_NODES = [
     },
 ]
 
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+SA4_BOUNDARY_FILE = (
+    REPO_ROOT
+    / "apps"
+    / "web"
+    / "public"
+    / "data"
+    / "boundaries"
+    / "sa4_2021_simplified.geojson"
+)
+
+
+def _slugify(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return re.sub(r"-{2,}", "-", slug)
+
+
+def _load_boundary_sa4_nodes(existing_nodes: list[dict]) -> list[dict]:
+    if not SA4_BOUNDARY_FILE.exists():
+        return []
+
+    payload = json.loads(SA4_BOUNDARY_FILE.read_text(encoding="utf-8"))
+    features = payload.get("features", [])
+    state_parent_by_code = {
+        node["code"]: node["id"] for node in existing_nodes if node.get("kind") == "state"
+    }
+    existing_boundary_codes = {
+        str(node.get("boundary_code"))
+        for node in existing_nodes
+        if node.get("kind") == "sa4" and node.get("boundary_code")
+    }
+    existing_ids = {str(node["id"]) for node in existing_nodes}
+    generated: list[dict] = []
+
+    for feature in features:
+        properties = feature.get("properties", {})
+        sa4_code = str(properties.get("sa4_code21") or "").strip()
+        sa4_name = str(properties.get("sa4_name21") or "").strip()
+        state_code = str(properties.get("ste_code") or "").strip()
+        if not sa4_code or not sa4_name or not state_code:
+            continue
+        if sa4_code in existing_boundary_codes:
+            continue
+
+        parent_id = state_parent_by_code.get(state_code)
+        if not parent_id:
+            continue
+
+        base_id = f"sa4-{state_code.lower()}-{_slugify(sa4_name)}-{sa4_code}"
+        node_id = base_id
+        serial = 2
+        while node_id in existing_ids:
+            node_id = f"{base_id}-{serial}"
+            serial += 1
+        existing_ids.add(node_id)
+        existing_boundary_codes.add(sa4_code)
+
+        generated.append(
+            {
+                "id": node_id,
+                "parent_id": parent_id,
+                "kind": "sa4",
+                "code": f"{state_code}_{sa4_code}",
+                "boundary_code": sa4_code,
+                "canonical_name": f"SA4: {sa4_name}",
+                "display_name": sa4_name,
+                "supported_view_modes": ["all", "metro", "regional"],
+                "has_children": False,
+            }
+        )
+    return generated
+
+
+GEOGRAPHY_NODES.extend(_load_boundary_sa4_nodes(GEOGRAPHY_NODES))
+
 FALLBACK_OCCUPATIONS = [
     {
         "id": "software-engineer",
@@ -400,7 +480,20 @@ except DataLoadError:
     _real_labour_dataset = None
 
 LABOUR_DATA_STATUS = ABS_SOURCE.data_status
-INDUSTRY_DATA_STATUS = DataStatus.MOCK
+INDUSTRY_SOURCE = SourceReference(
+    title="ABS Labour Force Detailed Table 05 - Industry by State",
+    url="https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia-detailed/feb-2026",
+    last_updated="2026-02-01",
+)
+REAL_INDUSTRIES_BY_GEO: dict[str, list[IndustryStat]] = {}
+try:
+    _real_industry_dataset = load_real_industry_dataset()
+    REAL_INDUSTRIES_BY_GEO = _real_industry_dataset.by_geo_code
+    INDUSTRY_SOURCE = _real_industry_dataset.source
+except DataLoadError:
+    _real_industry_dataset = None
+
+INDUSTRY_DATA_STATUS = INDUSTRY_SOURCE.data_status
 DETAIL_PANEL_DATA_STATUS = (
     DataStatus.REAL
     if ACTIVE_DATA_STATUS == DataStatus.REAL
@@ -671,6 +764,11 @@ def get_labour_market(geography_id: str) -> LabourMarketSnapshot:
 
 
 def get_industries(geography_id: str) -> list[IndustryStat]:
+    geo_key = get_real_data_geo_key(geography_id)
+    real_rows = REAL_INDUSTRIES_BY_GEO.get(geo_key)
+    if real_rows:
+        return real_rows
+
     rows = INDUSTRY_DATA.get(geography_id)
     if not rows:
         state_id = get_state_id(geography_id)
@@ -747,7 +845,7 @@ def build_detail_panel(
         source=SHORTAGE_SOURCE,
         geography_scope=effective_mode,
         visa_context_note=migration_note,
-        references=[SHORTAGE_SOURCE, SKILLSELECT_SOURCE, ABS_SOURCE],
+        references=[SHORTAGE_SOURCE, SKILLSELECT_SOURCE, ABS_SOURCE, INDUSTRY_SOURCE],
         data_status=SHORTAGE_SOURCE.data_status,
     )
     return DetailPanelResponse(

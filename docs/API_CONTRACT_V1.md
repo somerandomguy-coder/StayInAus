@@ -4,7 +4,7 @@ This document defines the current backend contract for `apps/api`.
 
 - Contract version: `v1`
 - Base URL (local): `http://127.0.0.1:8000`
-- Data status in this branch: `mixed` (real occupations/shortage/labour + mock industries)
+- Data status in this branch: `mostly real` (occupations/shortage/labour/industry)
 
 ## Global behavior
 
@@ -97,4 +97,5 @@ This document defines the current backend contract for `apps/api`.
 - Occupation list and national/state shortage categories are sourced from real JSA OSL data.
 - SA4 shortage still rolls up from state-level evidence (no SA4-specific OSL rows yet).
 - Labour market values are sourced from ABS LFS Table 12 (population is civilian population aged 15+).
-- Industry values are still mocked and should be replaced next.
+- Industry values are sourced from ABS LFS Detailed Table 05 top-5 state snapshot.
+- SA4 labour/industry values currently roll up from parent state snapshot.

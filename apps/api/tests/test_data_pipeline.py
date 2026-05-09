@@ -12,6 +12,7 @@ if str(API_ROOT) not in sys.path:
 from app.data_pipeline import (
     DataLoadError,
     FileFormat,
+    load_real_industry_dataset,
     OccupationShortageRow,
     load_real_labour_market_dataset,
     load_real_occupation_dataset,
@@ -113,6 +114,17 @@ class DataPipelineTests(unittest.TestCase):
         self.assertGreater(nsw.employment, 1_000_000)
         self.assertGreaterEqual(nsw.unemployment_rate, 0)
         self.assertLessEqual(nsw.unemployment_rate, 100)
+
+    def test_load_real_industry_dataset(self) -> None:
+        dataset = load_real_industry_dataset()
+        self.assertEqual(dataset.latest_month, "2026-02")
+        self.assertIn("NSW", dataset.by_geo_code)
+
+        nsw = dataset.by_geo_code["NSW"]
+        self.assertGreaterEqual(len(nsw), 5)
+        shares = [item.employment_share for item in nsw]
+        self.assertTrue(all(0 <= share <= 100 for share in shares))
+        self.assertGreaterEqual(shares[0], shares[-1])
 
 
 if __name__ == "__main__":

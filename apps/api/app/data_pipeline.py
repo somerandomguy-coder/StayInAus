@@ -12,6 +12,7 @@ from pydantic import BaseModel, Field, HttpUrl, ValidationError, field_validator
 
 from .schemas import (
     DataStatus,
+    IndustryStat,
     LabourMarketSnapshot,
     Occupation,
     ShortageCategory,
@@ -161,6 +162,35 @@ class RealLabourMarketDataset(BaseModel):
     source: SourceReference
     latest_month: str
     by_geo_code: dict[str, LabourMarketSnapshot]
+
+
+class IndustryRow(BaseModel):
+    geo_code: str = Field(pattern=r"^(AU|NSW|VIC|QLD|SA|WA|TAS|NT|ACT)$")
+    reference_month: str = Field(pattern=r"^\d{4}-\d{2}$")
+    industry_rank: int = Field(ge=1, le=20)
+    industry_name: str = Field(min_length=2)
+    employment_share: float = Field(ge=0, le=100)
+
+    @field_validator("geo_code", mode="before")
+    @classmethod
+    def normalize_industry_geo_code(cls, value: Any) -> str:
+        return str(value).strip().upper()
+
+    @field_validator("industry_rank", mode="before")
+    @classmethod
+    def parse_rank(cls, value: Any) -> int:
+        return int(str(value).strip())
+
+    @field_validator("employment_share", mode="before")
+    @classmethod
+    def parse_share(cls, value: Any) -> float:
+        return float(str(value).strip())
+
+
+class RealIndustryDataset(BaseModel):
+    source: SourceReference
+    latest_month: str
+    by_geo_code: dict[str, list[IndustryStat]]
 
 
 class DataLoadError(ValueError):
@@ -383,6 +413,73 @@ def load_real_labour_market_dataset(
         data_status=metadata.data_status,
     )
     return RealLabourMarketDataset(
+        source=source_reference,
+        latest_month=latest_month,
+        by_geo_code=by_geo_code,
+    )
+
+
+@lru_cache(maxsize=1)
+def load_real_industry_dataset(
+    dataset_id: str = "abs_lfs_table05_industry_top5_state_latest",
+) -> RealIndustryDataset:
+    metadata = _load_source_metadata(dataset_id)
+    local_path = REPO_ROOT / metadata.local_path
+    if not local_path.exists():
+        raise DataLoadError(f"Source file missing: {local_path}")
+
+    raw_rows = read_table(
+        local_path,
+        metadata.file_format,
+        sheet_name=metadata.sheet_name,
+        header_row=metadata.header_row,
+    )
+    if not raw_rows:
+        raise DataLoadError(f"Source file has no rows: {local_path}")
+
+    latest_month = ""
+    staged: dict[str, list[tuple[int, IndustryStat]]] = {}
+    errors: list[str] = []
+
+    for index, row in enumerate(raw_rows, start=2):
+        try:
+            parsed = IndustryRow.model_validate(row)
+        except ValidationError as error:
+            errors.append(f"row {index}: {error.errors()}")
+            if len(errors) >= 10:
+                break
+            continue
+
+        latest_month = max(latest_month, parsed.reference_month)
+        staged.setdefault(parsed.geo_code, []).append(
+            (
+                parsed.industry_rank,
+                IndustryStat(
+                    name=parsed.industry_name,
+                    employment_share=parsed.employment_share,
+                ),
+            )
+        )
+
+    if errors:
+        joined = "\n".join(errors)
+        raise DataLoadError(f"Invalid rows detected in {local_path}:\n{joined}")
+
+    if not staged:
+        raise DataLoadError(f"No valid industry rows found in {local_path}")
+
+    by_geo_code = {
+        geo_code: [stat for _, stat in sorted(rows, key=lambda pair: pair[0])]
+        for geo_code, rows in staged.items()
+    }
+
+    source_reference = SourceReference(
+        title=f"{metadata.provider} - {metadata.dataset_name}",
+        url=str(metadata.source_url),
+        last_updated=metadata.last_updated,
+        data_status=metadata.data_status,
+    )
+    return RealIndustryDataset(
         source=source_reference,
         latest_month=latest_month,
         by_geo_code=by_geo_code,

@@ -11,6 +11,7 @@
     "start:local": "node local-clone-server.js",
     "build:boundaries": "node scripts/build-boundaries.js",
     "build:labour-market": "python3 apps/api/scripts/extract_abs_labour_market.py",
+    "build:industry": "python3 apps/api/scripts/extract_abs_industry_top5.py",
     "check:boundaries": "python3 apps/api/scripts/validate_boundary_consistency.py",
     "dev:web": "npm run dev --workspace @stayinaus/web",
     "build:web": "npm run build --workspace @stayinaus/web",
