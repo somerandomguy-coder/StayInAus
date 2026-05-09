@@ -19,3 +19,4 @@ venv/
 .env
 .env.*
 .DS_Store
+plan.md

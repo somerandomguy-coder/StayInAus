@@ -10,9 +10,11 @@
     "start": "node local-clone-server.js",
     "start:local": "node local-clone-server.js",
     "build:boundaries": "node scripts/build-boundaries.js",
+    "check:boundaries": "python3 apps/api/scripts/validate_boundary_consistency.py",
     "dev:web": "npm run dev --workspace @stayinaus/web",
     "build:web": "npm run build --workspace @stayinaus/web",
     "start:web": "npm run start --workspace @stayinaus/web",
-    "dev:api": "uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir apps/api"
+    "dev:api": "uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir apps/api",
+    "test:api": "python3 -m unittest discover -s apps/api/tests -v"
   }
 }

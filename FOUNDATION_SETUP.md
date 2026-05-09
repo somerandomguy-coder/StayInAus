@@ -19,6 +19,12 @@ Start API:
 npm run dev:api
 ```
 
+Run API contract tests:
+
+```bash
+python3 -m unittest discover -s apps/api/tests -v
+```
+
 Start web app (new terminal):
 
 ```bash
@@ -45,6 +51,12 @@ Outputs:
 
 - `apps/web/public/data/boundaries/ste_2021_simplified.geojson`
 - `apps/web/public/data/boundaries/sa4_2021_simplified.geojson`
+
+Validate boundary/API consistency:
+
+```bash
+python3 apps/api/scripts/validate_boundary_consistency.py
+```
 
 To point web to another API base URL:
 
